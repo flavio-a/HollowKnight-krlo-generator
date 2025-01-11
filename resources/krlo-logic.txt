@@ -1,0 +1,131 @@
+# Settings
+# difficulty:
+# - easy (0): basic skips, default
+# - medium (1): roughly sr skips
+# - hard (2): roughly rando skips (not implemented)
+# flags: lever_skips (not implemented)
+
+# Skills:
+vs: -
+dash: -
+claw: Lever-Mantis_Claw
+cdash: claw || (Lever-Crystal_Peak_Spike_Grub + difficulty >= 2)
+wings: claw
+isma: claw
+shade_cloak: Lever-Abyss_Lighthouse + (claw || difficulty >= 2)
+dnail: (blue_lake + Switch-Lower_Resting_Grounds) || (claw + enter_peak)
+tram_pass: Lever-Failed_Tramway_Right + claw
+
+# (Some) Locations
+blue_lake: difficulty >= 1 || claw
+# with claw only you can get to Lemm, so the logic assumes infinte money
+enter_peak: claw
+waterways: claw
+left_city: claw || Lever-City_Fountain || Lever-City_Above_Lemm_Right
+right_city: blue_lake || (tram_pass + claw) || (waterways + cdash)
+# sanctum access is the same as Lever-Sanctum_Soul_Warrior
+woke_dnail: claw + (shade_cloak || Lever-City_Spire_Sentry_Upper || Lever-Sanctum_Soul_Warrior)
+
+# Essence:
+# + Hu (100, dnail)
+# + Galien (200, dnail + claw)
+# + Gorb (100, dnail + claw)
+# + Markoth (250, dnail + claw + shade_cloak)
+# + Marmu (150, dnail + claw)
+# + No Eyes (200, dnail + claw)
+# + Xero (100, dnail + claw)
+# + FC (300, dnail + (difficulty >= 1 || claw))
+# + GPZ (not in logic ever)
+# + LK (400, dnail + right_city + claw + cdash)
+# + WD (300, dnail + claw + cdash + Lever-City_Spire_Sentry_Upper)
+# + Tyrant (300, dnail + claw + Lever-Sanctum_Soul_Warrior)
+
+# Dirtmouth
+Switch-Dirtmouth_Stag: -
+Lever-Dirtmouth_Elevator: cdash + claw
+
+# Crossroads
+Switch-Outside_Ancestral_Mound: -
+Switch-Crossroads_East: -
+
+# Greenpath
+Switch-Greenpath_Stag: -
+
+# Resting Grounds
+Lever-Resting_Grounds_Stag: (blue_lake + Switch-Lower_Resting_Grounds) || (claw + enter_peak)
+Switch-Lower_Resting_Grounds: blue_lake
+
+# Fungal Wastes
+Lever-Queen's_Station_Mask_Shard: claw
+Lever-Fungal_Wastes_Thorns_Gauntlet: claw
+Lever-Fungal_Wastes_Below_Shrumal_Ogres: dash
+Lever-Fungal_Wastes_Bouncy_Grub: dash
+Lever-Pilgrim's_Way_Left: claw || cdash
+Lever-Pilgrim's_Way_Right: claw || cdash
+# Mantis Village
+Lever-Mantis_Claw: dash
+Lever-Mantis_Lords_Access: claw
+Lever-Mantis_Lords_Top_Left: Lever-Mantis_Lords_Access + claw
+Lever-Mantis_Lords_Middle_Left: Lever-Mantis_Lords_Access + claw
+Lever-Mantis_Lords_Bottom_Left: Lever-Mantis_Lords_Access + claw
+Lever-Mantis_Lords_Middle_Right: Lever-Mantis_Lords_Access + claw
+Lever-Mantis_Lords_Bottom_Right: Lever-Mantis_Lords_Access + claw
+
+# City of Tears
+Lever-City_Fountain: right_city
+Lever-City_Spire_Sentry_Lower: right_city + claw
+Lever-City_Spire_Sentry_Upper: claw + Lever-City_Spire_Sentry_Lower
+Lever-City_Bridge_Above_Fountain: claw + Lever-City_Spire_Sentry_Upper
+Lever-City_Storerooms: claw + (Lever-City_Bridge_Above_Fountain || Lever-City_Above_Lemm_Left)
+Lever-City_Lemm: left_city + claw
+Lever-City_Above_Lemm_Right: Lever-City_Bridge_Above_Fountain || Lever-City_Above_Lemm_Left
+Lever-City_Above_Lemm_Left: Lever-City_Above_Lemm_Upper
+Lever-City_Above_Lemm_Upper: claw + left_city
+# Sanctum
+Lever-Sanctum_Soul_Warrior: claw + (Lever-City_Bridge_Above_Fountain || Lever-City_Above_Lemm_Left)
+Lever-Sanctum_Below_Spell_Twister: claw + Lever-Sanctum_Soul_Warrior
+Lever-Sanctum_East: claw + Lever-Sanctum_Soul_Warrior
+Lever-Sanctum_Bottom: Lever-Sanctum_Soul_Warrior
+Lever-Sanctum_West_Upper: claw + Lever-Sanctum_Soul_Warrior
+Lever-Sanctum_West_Lower: claw + Lever-Sanctum_Soul_Warrior
+Lever-Shade_Soul_Exit: claw + enter_peak + (Lever-City_Bridge_Above_Fountain || Lever-City_Above_Lemm_Left)
+
+# Waterways
+Lever-Dung_Defender: waterways
+Lever-Waterways_Hwurmp_Arena: waterways
+Lever-Emilitia: (claw + cdash + waterways) || (claw + cdash + right_city + difficulty >= 1)
+
+# Crystal Peak
+Lever-Crystal_Peak_Tall_Room_Upper: enter_peak + claw
+Lever-Crystal_Peak_Tall_Room_Middle: enter_peak + claw
+Lever-Crystal_Peak_Tall_Room_Lower: enter_peak + claw
+Lever-Crystal_Peak_Spike_Grub: enter_peak + claw
+Lever-Crystal_Peak_Below_Chest: enter_peak + claw
+Lever-Crystal_Peak_Above_Chest: enter_peak + claw
+Lever-Crystal_Peak_Crushers_Grub: enter_peak + claw
+Lever-Crystal_Peak_Crushers_Chest: enter_peak + claw
+
+# Queen's Garden
+Lever-Below_Overgrown_Mound: claw + (cdash || isma)
+Switch-Petra_Arena: claw + (cdash || isma)
+Lever-Queen's_Gardens_Ground_Block: claw
+Switch-Queen's_Gardens_Stag: claw
+
+# Kingdom's Edge
+Lever-Tower_of_Love: right_city + claw
+
+# Basin
+Lever-Abyss_Lighthouse: right_city + claw
+
+# Deepnest
+Lever-Failed_Tramway_Right: claw
+Lever-Failed_Tramway_Left: claw + Lever-Failed_Tramway_Right
+
+# White Palace
+Lever-Palace_Entrance_Orb: claw + woke_dnail + wings
+Lever-Palace_Left: claw + Lever-Palace_Entrance_Orb
+Lever-Palace_Left_Orb: claw + Lever-Palace_Entrance_Orb
+Lever-Palace_Right: claw + Lever-Palace_Entrance_Orb
+Lever-Palace_Right_Orb: Lever-Palace_Right
+Lever-Palace_Balcony: claw + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb
+Lever-Path_of_Pain: claw + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb

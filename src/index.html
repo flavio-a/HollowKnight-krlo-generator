@@ -1,14 +1,46 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HK Kronk random levers order</title>
   </head>
   <body>
     <div class="container py-4 px-3 mx-auto">
-      <h1 class="text-center">HK Kronk random levers order generator</h1>
-      <button class="btn btn-primary">Primary button</button>
+      <h1 class="text-center mb-5">HK Kronk random levers order generator</h1>
+      <div class="row row-cols-2">
+        <!-- Randomizer output -->
+        <div class="col">
+          <p class="h3">Randomized order:</p>
+          <ul id="randomOrderOutput"></ul>
+        </div>
+        <!-- Form for settings -->
+        <div class="col">
+          <button class="btn btn-primary mb-3" id="generateButton">
+            Generate
+          </button>
+          <!-- <p class="mt-3 h4">Settings</p>
+          <form>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputDifficulty" class="col-form-label"
+                  >Skips difficulty</label
+                >
+              </div>
+              <div class="col-auto">
+                <select
+                  class="form-select"
+                  id="inputDifficulty"
+                  aria-label="Difficulty selection"
+                >
+                  <option value="0" selected>Easy</option>
+                  <option value="1">Normal</option>
+                </select>
+              </div>
+            </div>
+          </form> -->
+        </div>
+      </div>
     </div>
   </body>
 </html>
