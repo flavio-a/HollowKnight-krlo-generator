@@ -13,10 +13,11 @@ repos:
   hooks:
   - id: prettier
     types_or: [css, scss, sass, json, javascript, jsx, ts, tsx]
-# - repo: local
-#   - id: tsc
-#     name: Typecheck frontend (tsc)
-#     entry: ["npm", "run", "tsc", "--noEmit"]
-#     language: script
-#     pass_filenames: false
-#     types_or: [javascript, jsx, ts, tsx]
+- repo: local
+  hooks:
+  - id: tsc
+    name: Typecheck (tsc)
+    entry: bash -c "npm run tsc --noEmit"
+    language: system
+    pass_filenames: false
+    types_or: [javascript, ts]
