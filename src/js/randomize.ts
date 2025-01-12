@@ -31,7 +31,7 @@ function evaluateLogic(sequence: Array<string>, logic: Logic): boolean {
     return true;
   }
   if (logic.kind === "false") {
-    return true;
+    return false;
   }
   if (logic.kind === "min-difficulty") {
     // shouldn't appear here

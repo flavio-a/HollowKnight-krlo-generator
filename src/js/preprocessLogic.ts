@@ -1,7 +1,5 @@
 "use strict";
 
-import { parse } from "./lib/logicLineParser";
-
 export type Logic =
   | { kind: "identifier"; value: string }
   | { kind: "min-difficulty"; value: number }
@@ -9,18 +7,27 @@ export type Logic =
   | { kind: "false" | "true" };
 
 function sameLogic(logicA: Logic, logicB: Logic): boolean {
-  if (logicA.kind !== logicB.kind) {
-    return false;
-  }
-  if (logicA.kind === "false" || logicA.kind === "true") {
+  if (logicA.kind === "false" && logicB.kind === "false") {
     return true;
   }
-  if (logicA.kind === "identifier" || logicA.kind === "min-difficulty") {
-    // @ts-ignore
-    return logicA.value === logicB.value;
+  if (logicA.kind === "true" && logicB.kind === "true") {
+    return true;
+  }
+  if (
+    logicA.kind === "identifier" &&
+    logicB.kind === "identifier" &&
+    logicA.value === logicB.value
+  ) {
+    return true;
   }
   // We don't check "or"/"and" logic for equality
   return false;
+}
+
+function removeDuplicates(array: Array<Logic>): Array<Logic> {
+  return array.filter(
+    (l, idx) => idx === array.findIndex((b) => sameLogic(l, b))
+  );
 }
 
 function simplifyLogic(
@@ -54,9 +61,6 @@ function simplifyLogic(
     if (operands.some((op) => op.kind === "false")) {
       return { kind: "false" };
     }
-    if (operands.every((op) => sameLogic(op, operands[0]))) {
-      return operands[0];
-    }
     return { kind: "and", operands };
   }
   if (logic.kind === "or") {
@@ -71,9 +75,6 @@ function simplifyLogic(
     }
     if (operands.some((op) => op.kind === "true")) {
       return { kind: "true" };
-    }
-    if (operands.every((op) => sameLogic(op, operands[0]))) {
-      return operands[0];
     }
     return { kind: "or", operands };
   }
