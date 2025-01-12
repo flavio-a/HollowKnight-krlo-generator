@@ -16,4 +16,5 @@ npm run deploy
 This creates the branch directly on GitHub.
 
 ## TODO
+- make the split maker
 - make a favicon

@@ -75,7 +75,7 @@ Lever-Mantis_Lords_Bottom_Right: Lever-Mantis_Lords_Access + claw
 Lever-Mantis_Lords_Reward: Lever-Mantis_Lords_Access + claw
 
 # City of Tears
-Lever-City_Fountain: right_city
+Lever-City_Fountain: right_city + (claw || difficulty >= 1)
 Lever-City_Spire_Sentry_Lower: right_city + claw
 Lever-City_Spire_Sentry_Upper: claw + Lever-City_Spire_Sentry_Lower
 Lever-City_Bridge_Above_Fountain: claw + Lever-City_Spire_Sentry_Upper
