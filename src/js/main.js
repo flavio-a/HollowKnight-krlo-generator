@@ -4,10 +4,11 @@ import "../scss/styles.scss";
 import { getRandomOrder } from "./randomize";
 import { outputOrder } from "./make_output";
 import logic from "../../resources/krlo-logic.txt";
-import names from "../../resources/leverLongNames.json";
+import leversData from "../../resources/leversData.json";
 
-let groupingFactor = 5;
+let groupingFactor = 7;
 let difficulty = 1;
+console.log("levers data:", leversData);
 
 const inputGroupingFactorValidation = document.getElementById(
   "inputGroupingFactorValidation"
@@ -33,8 +34,9 @@ document.getElementById("inputDifficulty").onchange = inputDifficultyOnchange;
 
 document.getElementById("generateButton").onclick = () => {
   console.log(`Difficulty: ${difficulty}\nGrouping factor: ${groupingFactor}`);
-  const order = getRandomOrder(logic, Object.keys(names), 1);
-  outputOrder(order, names);
+  const config = { logicData: logic, leversData };
+  const order = getRandomOrder(config, { difficulty, groupingFactor });
+  outputOrder(order, leversData);
 };
 
 document.getElementById("settingsForm").reset();

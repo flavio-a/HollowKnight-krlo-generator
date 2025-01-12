@@ -45,28 +45,36 @@
     "text": "Abyss Lighthouse"
   },
   "Lever-Failed_Tramway_Right": {
-    "text": "Tramway Lower Gate"
+    "text": "Tramway Lower Gate",
+    "group": "Tramway"
   },
   "Lever-Failed_Tramway_Left": {
-    "text": "Tramway Exit Gates"
+    "text": "Tramway Exit Gates",
+    "group": "Tramway"
   },
-  "Lever-Below_Spell_Twister": {
-    "text": "Gate Below Spell Twister"
+  "Lever-Sanctum_Below_Spell_Twister": {
+    "text": "Gate Below Spell Twister",
+    "group": "Sanctum"
   },
   "Lever-Sanctum_East": {
-    "text": "East Sanctum Gate"
+    "text": "East Sanctum Gate",
+    "group": "Sanctum"
   },
   "Lever-Sanctum_Soul_Warrior": {
-    "text": "Soul Warrior 1 Arena Gate"
+    "text": "Soul Warrior 1 Arena Gate",
+    "group": "Sanctum"
   },
   "Lever-Sanctum_Bottom": {
-    "text": "Lower Sanctum Gate"
+    "text": "Lower Sanctum Gate",
+    "group": "Sanctum"
   },
   "Lever-Sanctum_West_Upper": {
-    "text": "West Sanctum Upper Gate"
+    "text": "West Sanctum Upper Gate",
+    "group": "Sanctum"
   },
   "Lever-Sanctum_West_Lower": {
-    "text": "West Sanctum Lower Gate"
+    "text": "West Sanctum Lower Gate",
+    "group": "Sanctum"
   },
   "Lever-City_Fountain": {
     "text": "City Fountain Gate"
@@ -90,10 +98,12 @@
     "text": "Single Gate Above Lemm"
   },
   "Lever-City_Above_Lemm_Left": {
-    "text": "Triple Gate Above Lemm"
+    "text": "Triple Gate Above Lemm",
+    "group": "DLC_Rooms"
   },
   "Lever-City_Above_Lemm_Upper": {
-    "text": "City Gate Opposite Grub"
+    "text": "City Gate Opposite Grub (DLC room)",
+    "group": "DLC_Rooms"
   },
   "Lever-Shade_Soul_Exit": {
     "text": "Shade Soul Exit Gate"
@@ -102,19 +112,24 @@
     "text": "Emilitia Door"
   },
   "Lever-Mantis_Lords_Top_Left": {
-    "text": "Mantis Lords Top Left"
+    "text": "Mantis Lords Top Left",
+    "group": "Mantis_Village"
   },
   "Lever-Mantis_Lords_Middle_Left": {
-    "text": "Mantis Lords Middle Left"
+    "text": "Mantis Lords Middle Left",
+    "group": "Mantis_Village"
   },
   "Lever-Mantis_Lords_Bottom_Left": {
-    "text": "Mantis Lords Bottom Left"
+    "text": "Mantis Lords Bottom Left",
+    "group": "Mantis_Village"
   },
   "Lever-Mantis_Lords_Middle_Right": {
-    "text": "Mantis Lords Middle Right"
+    "text": "Mantis Lords Middle Right",
+    "group": "Mantis_Village"
   },
   "Lever-Mantis_Lords_Bottom_Right": {
-    "text": "Mantis Lords Bottom Right"
+    "text": "Mantis Lords Bottom Right",
+    "group": "Mantis_Village"
   },
   "Lever-Mantis_Claw": {
     "text": "Mantis Claw Access"
@@ -135,54 +150,69 @@
     "text": "Dirtmouth Elevator"
   },
   "Lever-Crystal_Peak_Tall_Room_Upper": {
-    "text": "Peaks Tall Room Upper"
+    "text": "Peak Tall Room Upper",
+    "group": "Peak_Tall_Room"
   },
   "Lever-Crystal_Peak_Tall_Room_Middle": {
-    "text": "Peaks Tall Room Middle"
+    "text": "Peak Tall Room Middle",
+    "group": "Peak_Tall_Room"
   },
   "Lever-Crystal_Peak_Tall_Room_Lower": {
-    "text": "Peaks Tall Room Lower"
+    "text": "Peak Tall Room Lower",
+    "group": "Peak_Tall_Room"
   },
   "Lever-Crystal_Peak_Spike_Grub": {
-    "text": "Peaks Spike Grub Gate"
+    "text": "Peak Spike Grub Gate"
   },
   "Lever-Crystal_Peak_Below_Chest": {
-    "text": "Peaks Gate Below Chest (All Skills Grub)"
+    "text": "Peak Gate Below Chest (All Skills Grub)",
+    "group": "Peak_Chest"
   },
   "Lever-Crystal_Peak_Above_Chest": {
-    "text": "Peaks Gate Above Chest"
-  },
-  "Lever-Crystal_Peak_Crushers_Grub": {
-    "text": "Peaks Upper Crushers"
+    "text": "Peak Gate Above Chest",
+    "group": "Peak_Chest"
   },
   "Lever-Crystal_Peak_Crushers_Chest": {
-    "text": "Peaks Lower Crushers"
+    "text": "Peak Lower Crushers",
+    "group": "Peak_Chest"
   },
-  "Lever-Palace_Atrium": {
-    "text": "Palace Atrium Gate"
+  "Lever-Crystal_Peak_Crushers_Grub": {
+    "text": "Peak Upper Crushers (Grub)"
+  },
+  "Lever-Palace_Left": {
+    "text": "Palace Left Atrium Gate",
+    "group": "White_Palace"
   },
   "Lever-Palace_Right": {
-    "text": "Palace Right Gates"
+    "text": "Palace Right Atrium Gates",
+    "group": "White_Palace"
   },
-  "Lever-Palace_Final": {
-    "text": "Palace Final Gates"
+  "Lever-Palace_Balcony": {
+    "text": "Palace Balcony Gates",
+    "group": "White_Palace"
   },
   "Lever-Path_of_Pain": {
-    "text": "Path of Pain Gate"
+    "text": "Path of Pain Gate",
+    "group": "White_Palace"
   },
   "Lever-Palace_Entrance_Orb": {
-    "text": "Palace Entrance Orb"
+    "text": "Palace Entrance Orb",
+    "group": "White_Palace"
   },
   "Lever-Palace_Left_Orb": {
-    "text": "Palace Left Orb"
+    "text": "Palace Left Orb",
+    "group": "White_Palace"
   },
   "Lever-Palace_Right_Orb": {
-    "text": "Palace Right Orb"
+    "text": "Palace Right Orb",
+    "group": "White_Palace"
   },
   "Lever-Pilgrim's_Way_Left": {
-    "text": "Left Pilgrim's Way Bridge"
+    "text": "Left Pilgrim's Way Bridge",
+    "group": "Pilgrim_Bridge"
   },
   "Lever-Pilgrim's_Way_Right": {
-    "text": "Right Pilgrim's Way Bridge"
+    "text": "Right Pilgrim's Way Bridge",
+    "group": "Pilgrim_Bridge"
   }
 }

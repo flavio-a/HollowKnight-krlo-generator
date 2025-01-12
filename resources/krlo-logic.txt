@@ -128,4 +128,4 @@ Lever-Palace_Left_Orb: claw + Lever-Palace_Entrance_Orb
 Lever-Palace_Right: claw + Lever-Palace_Entrance_Orb
 Lever-Palace_Right_Orb: Lever-Palace_Right
 Lever-Palace_Balcony: claw + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb
-Lever-Path_of_Pain: claw + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb
+Lever-Path_of_Pain: claw + wings + cdash + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb
