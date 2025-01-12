@@ -1,13 +1,19 @@
 # HollowKnight-krlo-generator
 
 To run locally, install npm dev-dependencies and then:
-```
+```bash
 npm run start
 ```
 
 This starts the development server, listening on port 8080.
 
+## Deploy
+I use [gh-pages](https://www.npmjs.com/package/gh-pages). To deploy just run
+```bash
+npm run deploy
+```
+
+This creates the branch directly on GitHub.
+
 ## TODO
-- deploy on gh-pages
-- write credits in the page
-- add setting to group together levers close by
+- add credits to the webpage

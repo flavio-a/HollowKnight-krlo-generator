@@ -8,7 +8,6 @@ import leversData from "../../resources/leversData.json";
 
 let groupingFactor = 7;
 let difficulty = 1;
-console.log("levers data:", leversData);
 
 const inputGroupingFactorValidation = document.getElementById(
   "inputGroupingFactorValidation"
