@@ -4,4 +4,4 @@ Static file import (namely `loaders/text-loader.js` and the corresponding config
 
 Lever list and names: [HollowKnight.RandomizableLevers](https://github.com/flibber-hk/HollowKnight.RandomizableLevers/blob/main/RandomizableLevers/Resources/languagedata.json)
 
-Randomizer logic: [SBRCO](https://github.com/dpinela/SBRCO-Programs)
+Randomizer algorithm: [SBRCO](https://github.com/dpinela/SBRCO-Programs)

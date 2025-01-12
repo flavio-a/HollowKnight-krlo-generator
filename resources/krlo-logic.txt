@@ -9,9 +9,9 @@
 vs: -
 dash: -
 claw: Lever-Mantis_Claw
-cdash: claw || (Lever-Crystal_Peak_Spike_Grub + difficulty >= 2)
-wings: claw
-isma: claw
+cdash: claw + money || money + Lever-Crystal_Peak_Spike_Grub + difficulty >= 2
+wings: claw + cdash
+isma: claw + cdash
 shade_cloak: Lever-Abyss_Lighthouse + (claw || difficulty >= 2)
 dnail: (blue_lake + Switch-Lower_Resting_Grounds) || (claw + enter_peak)
 tram_pass: Lever-Failed_Tramway_Right + claw
@@ -20,8 +20,10 @@ tram_pass: Lever-Failed_Tramway_Right + claw
 blue_lake: difficulty >= 1 || claw
 # with claw only you can get to Lemm, so the logic assumes infinte money
 enter_peak: claw
-waterways: claw
-left_city: claw || Lever-City_Fountain || Lever-City_Above_Lemm_Right
+waterways: left_city || right_city + claw
+# To get left_city/Lemm you need to be able to access _and_ leave it
+left_city: claw + (Lever-City_Above_Lemm_Right || Lever-City_Above_Lemm_Left) || Lever-City_Fountain || Lever-City_Above_Lemm_Right
+money: claw + left_city
 right_city: blue_lake || (tram_pass + claw) || (waterways + cdash)
 # sanctum access is the same as Lever-Sanctum_Soul_Warrior
 woke_dnail: claw + (shade_cloak || Lever-City_Spire_Sentry_Upper || Lever-Sanctum_Soul_Warrior)
@@ -70,6 +72,7 @@ Lever-Mantis_Lords_Middle_Left: Lever-Mantis_Lords_Access + claw
 Lever-Mantis_Lords_Bottom_Left: Lever-Mantis_Lords_Access + claw
 Lever-Mantis_Lords_Middle_Right: Lever-Mantis_Lords_Access + claw
 Lever-Mantis_Lords_Bottom_Right: Lever-Mantis_Lords_Access + claw
+Lever-Mantis_Lords_Reward: Lever-Mantis_Lords_Access + claw
 
 # City of Tears
 Lever-City_Fountain: right_city
@@ -88,7 +91,7 @@ Lever-Sanctum_East: claw + Lever-Sanctum_Soul_Warrior
 Lever-Sanctum_Bottom: Lever-Sanctum_Soul_Warrior
 Lever-Sanctum_West_Upper: claw + Lever-Sanctum_Soul_Warrior
 Lever-Sanctum_West_Lower: claw + Lever-Sanctum_Soul_Warrior
-Lever-Shade_Soul_Exit: claw + enter_peak + (Lever-City_Bridge_Above_Fountain || Lever-City_Above_Lemm_Left)
+Lever-Shade_Soul_Exit: claw + enter_peak + money + (Lever-City_Bridge_Above_Fountain || Lever-City_Above_Lemm_Left)
 
 # Waterways
 Lever-Dung_Defender: waterways

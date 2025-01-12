@@ -21,7 +21,7 @@
     "text": "East Crossroads Gate"
   },
   "Lever-Dung_Defender": {
-    "text": "Waterways Acid Pool"
+    "text": "Waterways Dung Defender"
   },
   "Lever-Waterways_Hwurmp_Arena": {
     "text": "Waterways Exit Gate"
@@ -53,27 +53,27 @@
     "group": "Tramway"
   },
   "Lever-Sanctum_Below_Spell_Twister": {
-    "text": "Gate Below Spell Twister",
+    "text": "Sanctum Gate Below Spell Twister",
     "group": "Sanctum"
   },
   "Lever-Sanctum_East": {
-    "text": "East Sanctum Gate",
+    "text": "Sanctum after Soul Warrior",
     "group": "Sanctum"
   },
   "Lever-Sanctum_Soul_Warrior": {
-    "text": "Soul Warrior 1 Arena Gate",
+    "text": "Sanctum Soul Warrior 1 Arena Gate",
     "group": "Sanctum"
   },
   "Lever-Sanctum_Bottom": {
-    "text": "Lower Sanctum Gate",
+    "text": "Sanctum Exit Gate",
     "group": "Sanctum"
   },
   "Lever-Sanctum_West_Upper": {
-    "text": "West Sanctum Upper Gate",
+    "text": "Sanctum after Soul Master Upper",
     "group": "Sanctum"
   },
   "Lever-Sanctum_West_Lower": {
-    "text": "West Sanctum Lower Gate",
+    "text": "Sanctum after Soul Master Lower",
     "group": "Sanctum"
   },
   "Lever-City_Fountain": {
@@ -131,6 +131,10 @@
     "text": "Mantis Lords Bottom Right",
     "group": "Mantis_Village"
   },
+  "Lever-Mantis_Lords_Reward": {
+    "text": "Mantis Lords Reward Room",
+    "group": "Mantis_Village"
+  },
   "Lever-Mantis_Claw": {
     "text": "Mantis Claw Access"
   },
@@ -173,7 +177,7 @@
     "group": "Peak_Chest"
   },
   "Lever-Crystal_Peak_Crushers_Chest": {
-    "text": "Peak Lower Crushers",
+    "text": "Peak Lower Crushers (Chest)",
     "group": "Peak_Chest"
   },
   "Lever-Crystal_Peak_Crushers_Grub": {

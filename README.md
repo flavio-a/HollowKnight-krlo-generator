@@ -16,4 +16,4 @@ npm run deploy
 This creates the branch directly on GitHub.
 
 ## TODO
-- add credits to the webpage
+- make a favicon
