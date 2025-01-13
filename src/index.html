@@ -20,11 +20,18 @@
           <p class="h3">Randomized order:</p>
           <ol id="randomOrderOutput"></ol>
         </div>
-        <!-- Form for settings -->
         <div class="col">
-          <button class="btn btn-primary mb-3" id="generateButton">
-            Generate
-          </button>
+          <button class="btn btn-primary" id="generateButton">Generate</button>
+          <p class="mt-3">
+            Link to HKSM for splits:
+            <span id="hksmLinkAlt">(will appear after generating an order)</span>
+            <a id="hksmLink" target="_blank" class="d-none" href="#"
+              >get splits</a
+            >
+            <br/>
+            <small class="text-muted text-small">Did you know that slaurent is the best for making HKSM?</small>
+          </p>
+          <!-- Form for settings -->
           <p class="mt-3 h4">Settings</p>
           <form id="settingsForm">
             <div class="row g-3 align-items-center">
@@ -57,7 +64,7 @@
               />
               <div
                 id="inputGroupingFactorValidation"
-                class="invalid-feedback invisible"
+                class="invalid-feedback d-none"
               >
                 Grouping factor should be between 0 and 10.
               </div>

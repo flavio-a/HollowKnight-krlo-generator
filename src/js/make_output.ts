@@ -2,23 +2,24 @@
 
 import { LeverData } from "./randomize";
 
-function makeLi(
-  identifier: string,
-  leversData: Record<string, LeverData>
-): Element {
+function makeLi(identifier: string): Element {
   const newLi = document.createElement("li");
-  const newContent = document.createTextNode(leversData[identifier].text);
+  const newContent = document.createTextNode(identifier);
   newLi.appendChild(newContent);
   return newLi;
 }
 
-export function outputOrder(
-  order: Array<string>,
-  leversData: Record<string, LeverData>
-) {
+export function outputOrder(textOrder: Array<string>) {
   const ul = document.getElementById("randomOrderOutput");
   ul.textContent = "";
-  for (const ide of order) {
-    ul.appendChild(makeLi(ide, leversData));
+  for (const ide of textOrder) {
+    ul.appendChild(makeLi(ide));
   }
+}
+
+export function makeTextOrder(
+  order: Array<string>,
+  leversData: Record<string, LeverData>
+): Array<string> {
+  return order.map((ide) => leversData[ide].text);
 }

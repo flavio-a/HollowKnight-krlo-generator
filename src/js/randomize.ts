@@ -13,7 +13,7 @@ type Config = {
   leversData: Record<string, LeverData>;
 };
 
-type Options = {
+export type Options = {
   difficulty: number;
   groupingFactor: number;
 };
