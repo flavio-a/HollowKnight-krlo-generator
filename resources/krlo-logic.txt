@@ -109,10 +109,10 @@ Lever-Crystal_Peak_Crushers_Grub: enter_peak + claw
 Lever-Crystal_Peak_Crushers_Chest: enter_peak + claw
 
 # Queen's Garden
-Lever-Below_Overgrown_Mound: claw + (cdash || isma)
-Switch-Petra_Arena: claw + (cdash || isma)
-Lever-Queen's_Gardens_Ground_Block: claw
-Switch-Queen's_Gardens_Stag: claw
+Lever-Below_Overgrown_Mound: claw + (cdash || isma || Lever-Queen's_Gardens_Ground_Block)
+Switch-Petra_Arena: claw + (cdash || isma || Lever-Queen's_Gardens_Ground_Block)
+Lever-Queen's_Gardens_Ground_Block: claw + (difficulty >= 2 || money)
+Switch-Queen's_Gardens_Stag: claw + (difficulty >= 2 || money)
 
 # Kingdom's Edge
 Lever-Tower_of_Love: right_city + claw
@@ -121,7 +121,7 @@ Lever-Tower_of_Love: right_city + claw
 Lever-Abyss_Lighthouse: right_city + claw
 
 # Deepnest
-Lever-Failed_Tramway_Right: claw
+Lever-Failed_Tramway_Right: claw + (difficulty >= 1 || money)
 Lever-Failed_Tramway_Left: claw + Lever-Failed_Tramway_Right
 
 # White Palace
