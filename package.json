@@ -1,6 +1,6 @@
 {
   "name": "hollowknight-krlo-generator",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A web-based generator of random orders for krlo",
   "main": "index.js",
   "scripts": {

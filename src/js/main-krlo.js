@@ -1,19 +1,11 @@
-// Import our custom CSS
-import "../scss/styles.scss";
-
 import { getRandomOrder } from "./randomize";
 import { makeTextOrder, outputOrder } from "./make_output";
 import { makeURLpath } from "./make_splits";
 import logic from "../../resources/krlo-logic.txt";
 import leversData from "../../resources/leversData.json";
-import packagejson from "../../package.json";
 
 let groupingFactor = 7;
 let difficulty = 1;
-
-document.getElementById(
-  "versionDisplay"
-).textContent = `Version ${packagejson.version}`;
 
 const inputGroupingFactorValidation = document.getElementById(
   "inputGroupingFactorValidation"

@@ -32,4 +32,5 @@ in the future.
 ## TODO
 
 - make a favicon
-- explain what skip difficulties are in the webpage
+- KRLO: explain what skip difficulties are in the webpage
+- make a script that automatically builds `credits.html` from `credits.md`
