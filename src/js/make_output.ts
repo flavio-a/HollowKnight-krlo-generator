@@ -1,6 +1,6 @@
 "use strict";
 
-import { LeverData } from "./randomize";
+import { RandoItemData } from "./randomize";
 
 function makeLi(identifier: string): Element {
   const newLi = document.createElement("li");
@@ -19,7 +19,7 @@ export function outputOrder(textOrder: Array<string>) {
 
 export function makeTextOrder(
   order: Array<string>,
-  leversData: Record<string, LeverData>
+  leversData: Record<string, RandoItemData>
 ): Array<string> {
   return order.map((ide) => leversData[ide].text);
 }

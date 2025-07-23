@@ -1,7 +1,7 @@
 {
   "name": "hollowknight-krlo-generator",
-  "version": "1.1.4",
-  "description": "A web-based generator of random levers order for krlo",
+  "version": "1.2.0",
+  "description": "A web-based generator of random orders for krlo",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",

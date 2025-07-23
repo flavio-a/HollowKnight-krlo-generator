@@ -42,7 +42,7 @@ const hksmLinkAlt = document.getElementById("hksmLinkAlt");
 
 document.getElementById("generateButton").onclick = () => {
   console.log(`Difficulty: ${difficulty}\nGrouping factor: ${groupingFactor}`);
-  const config = { logicData: logic, leversData };
+  const config = { logicData: logic, itemsData: leversData };
   const options = { difficulty, groupingFactor };
   const order = getRandomOrder(config, options);
   const textOrder = makeTextOrder(order, leversData);

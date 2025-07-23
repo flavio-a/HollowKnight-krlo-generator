@@ -6,9 +6,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/js/main.js",
+  entry: {
+    krlo: "./src/js/main-krlo.js",
+    gbrso: "./src/js/main-gbrso.js",
+  },
   output: {
-    filename: "main.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
@@ -16,7 +19,19 @@ module.exports = {
     port: 8080,
     hot: true,
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+  plugins: [
+    new HtmlWebpackPlugin({ template: "./src/index.html" }),
+    new HtmlWebpackPlugin({
+      template: "./src/krlo.html",
+      filename: "krlo.html",
+      chunks: ["krlo"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/gbrso.html",
+      filename: "gbrso.html",
+      chunks: ["gbrso"],
+    }),
+  ],
   module: {
     rules: [
       {

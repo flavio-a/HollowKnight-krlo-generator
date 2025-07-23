@@ -3,20 +3,22 @@
 import { parse } from "./lib/logicLineParser";
 import { Logic, preprocessLogic } from "./preprocessLogic";
 
-export type LeverData = {
+export type RandoItemData = {
   text: string;
   group?: string;
 };
 
 type Config = {
   logicData: string;
-  leversData: Record<string, LeverData>;
+  itemsData: Record<string, RandoItemData>;
 };
 
 export type Options = {
-  difficulty: number;
-  groupingFactor: number;
+  difficulty?: number;
+  groupingFactor?: number;
 };
+
+const defaultOptions = { difficulty: 1, groupingFactor: 0 };
 
 function randomSample<T>(array: Array<T>): T {
   return array[Math.floor(Math.random() * array.length)];
@@ -61,10 +63,13 @@ function getActiveIdentifierList(
 }
 
 export function getRandomOrder(
-  { logicData, leversData }: Config,
-  { difficulty, groupingFactor }: Options
+  { logicData, itemsData }: Config,
+  options: Options
 ): Array<string> {
-  const isTerminal = (lhs: string) => !!leversData[lhs];
+  const difficulty = options.difficulty ?? defaultOptions.difficulty;
+  const groupingFactor =
+    options.groupingFactor ?? defaultOptions.groupingFactor;
+  const isTerminal = (lhs: string) => !!itemsData[lhs];
   const logics = preprocessLogic(parse(logicData), isTerminal, difficulty);
   // Makes a list of everything, including temp things
   const allIdentifiers = Object.keys(logics);
@@ -75,10 +80,10 @@ export function getRandomOrder(
     // to nearby levers (unless the result is empty)
     if (biasedCoinFlip(groupingFactor / 10)) {
       const last_item = randomFullOrder[randomFullOrder.length - 1];
-      const last_group = leversData[last_item]?.group;
+      const last_group = itemsData[last_item]?.group;
       if (!!last_group) {
         const activeIdentifiersSameGroup = activeIdentifiers.filter(
-          (ide) => leversData[ide]?.group === last_group
+          (ide) => itemsData[ide]?.group === last_group
         );
         if (activeIdentifiersSameGroup.length > 0) {
           activeIdentifiers = activeIdentifiersSameGroup;
