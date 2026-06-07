@@ -2,7 +2,13 @@
 
 const path = require("path");
 const autoprefixer = require("autoprefixer");
+const child_process = require("child_process");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+function git(command) {
+  return child_process.execSync(`git ${command}`, { encoding: "utf8" }).trim();
+}
 
 module.exports = {
   mode: "development",
@@ -36,6 +42,9 @@ module.exports = {
       template: "./src/gbrso.html",
       filename: "gbrso.html",
       chunks: ["main", "gbrso"],
+    }),
+    new webpack.EnvironmentPlugin({
+      GIT_VERSION: git("describe --always"),
     }),
   ],
   module: {

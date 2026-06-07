@@ -1,9 +1,7 @@
 // Import our CSS
 import "../scss/styles.scss";
 
-// Print the version at the bottom
-import packagejson from "../../package.json";
+const commit = process.env.GIT_VERSION;
+// const url = `https://github.com/slaurent22/hk-split-maker/commit/${commit}`;
 
-document.getElementById(
-  "versionDisplay"
-).textContent = `Version ${packagejson.version}`;
+document.getElementById("versionDisplay").textContent = `Commit ${commit}`;
