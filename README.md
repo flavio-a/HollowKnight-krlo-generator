@@ -33,4 +33,5 @@ in the future.
 
 - make a favicon
 - KRLO: explain what skip difficulties are in the webpage
+- KRLO: make a map of the levers with names
 - make a script that automatically builds `credits.html` from `credits.md`

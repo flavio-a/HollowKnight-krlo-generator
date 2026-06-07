@@ -109,7 +109,7 @@ Lever-Crystal_Peak_Crushers_Grub: enter_peak + claw
 Lever-Crystal_Peak_Crushers_Chest: enter_peak + claw
 
 # Queen's Garden
-Lever-Below_Overgrown_Mound: claw + (cdash || isma || Lever-Queen's_Gardens_Ground_Block)
+Lever-Below_Overgrown_Mound: claw + (cdash + difficulty >= 1 || isma || Lever-Queen's_Gardens_Ground_Block)
 Switch-Petra_Arena: claw + (cdash || isma || Lever-Queen's_Gardens_Ground_Block)
 Lever-Queen's_Gardens_Ground_Block: claw + (difficulty >= 2 || money)
 Switch-Queen's_Gardens_Stag: claw + (difficulty >= 2 || money)
@@ -127,7 +127,7 @@ Lever-Failed_Tramway_Left: claw + Lever-Failed_Tramway_Right
 # White Palace
 Lever-Palace_Entrance_Orb: claw + woke_dnail + wings
 Lever-Palace_Left: claw + Lever-Palace_Entrance_Orb
-Lever-Palace_Left_Orb: claw + Lever-Palace_Entrance_Orb
+Lever-Palace_Left_Orb: claw + Lever-Palace_Entrance_Orb + Lever-Palace_Left
 Lever-Palace_Right: claw + Lever-Palace_Entrance_Orb
 Lever-Palace_Right_Orb: Lever-Palace_Right
 Lever-Palace_Balcony: claw + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb

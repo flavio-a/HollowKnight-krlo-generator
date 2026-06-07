@@ -57,7 +57,7 @@
     "group": "Sanctum"
   },
   "Lever-Sanctum_East": {
-    "text": "Sanctum after Soul Warrior",
+    "text": "Sanctum right of Soul Warrior 1",
     "group": "Sanctum"
   },
   "Lever-Sanctum_Soul_Warrior": {
@@ -65,7 +65,7 @@
     "group": "Sanctum"
   },
   "Lever-Sanctum_Bottom": {
-    "text": "Sanctum Exit Gate",
+    "text": "Sanctum Exit Shortcut",
     "group": "Sanctum"
   },
   "Lever-Sanctum_West_Upper": {
@@ -92,17 +92,17 @@
     "text": "City Storerooms Gate"
   },
   "Lever-City_Lemm": {
-    "text": "Gate Opposite Lemm"
+    "text": "Gate Next to Lemm"
   },
   "Lever-City_Above_Lemm_Right": {
-    "text": "Single Gate Above Lemm"
+    "text": "Above Lemm Right"
   },
   "Lever-City_Above_Lemm_Left": {
-    "text": "Triple Gate Above Lemm",
+    "text": "Above Lemm Left",
     "group": "DLC_Rooms"
   },
   "Lever-City_Above_Lemm_Upper": {
-    "text": "City Gate Opposite Grub (DLC room)",
+    "text": "Above Lemm Upper (DLC room)",
     "group": "DLC_Rooms"
   },
   "Lever-Shade_Soul_Exit": {
@@ -139,10 +139,11 @@
     "text": "Mantis Claw Access"
   },
   "Lever-Mantis_Lords_Access": {
-    "text": "Mantis Lords Access"
+    "text": "Mantis Lords Access",
+    "group": "Mantis_Village"
   },
   "Lever-Fungal_Wastes_Thorns_Gauntlet": {
-    "text": "Fungal Thorns Gauntlet Exit"
+    "text": "Fungal Paum Lever"
   },
   "Lever-Fungal_Wastes_Below_Shrumal_Ogres": {
     "text": "Gate Below Shrumal Ogres"
