@@ -1,0 +1,6 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:24-trixie",
+    "forwardPorts": [
+        8080
+    ]
+}

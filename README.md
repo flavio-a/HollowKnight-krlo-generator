@@ -1,9 +1,15 @@
 # HollowKnight-krlo-generator
 
-To run locally, install npm dev-dependencies and then:
+To run locally, install dev-dependencies and generate the parser:
+```bash
+npm install --include=dev
+npm run make-parser
+```
+
+To run locally
 
 ```bash
-npm run start
+npm run serve
 ```
 
 This starts the development server, listening on port 8080.

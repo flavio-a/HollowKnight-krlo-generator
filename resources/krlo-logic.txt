@@ -19,7 +19,7 @@ tram_pass: Lever-Failed_Tramway_Right + claw
 dive: Lever-Sanctum_Soul_Warrior + (claw || difficulty >= 2)
 
 # (Some) Locations
-blue_lake: difficulty >= 1 || claw
+blue_lake: claw || difficulty >= 1
 # with claw only you can get to Lemm, so the logic assumes infinte money
 enter_peak: money || dive
 waterways: left_city || (right_city + claw)

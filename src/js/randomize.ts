@@ -16,9 +16,10 @@ type Config = {
 export type Options = {
   difficulty?: number;
   groupingFactor?: number;
+  delayClaw?: boolean;
 };
 
-const defaultOptions = { difficulty: 1, groupingFactor: 0 };
+const defaultOptions: Options = { difficulty: 1, groupingFactor: 0, delayClaw: true };
 
 function randomSample<T>(array: Array<T>): T {
   return array[Math.floor(Math.random() * array.length)];
@@ -26,6 +27,10 @@ function randomSample<T>(array: Array<T>): T {
 
 function biasedCoinFlip(trueChance: number): boolean {
   return Math.random() < trueChance;
+}
+
+function isClaw(elem: string): boolean {
+  return elem === "claw" || elem === "Lever-Mantis_Claw";
 }
 
 function evaluateLogic(sequence: Array<string>, logic: Logic): boolean {
@@ -90,7 +95,13 @@ export function getRandomOrder(
         }
       }
     }
-    const randomElement = randomSample(activeIdentifiers);
+    let randomElement = randomSample(activeIdentifiers);
+    // If delay claw is active and draws claw, redraw with 60% chance
+    if ((options.delayClaw ?? defaultOptions.delayClaw) && isClaw(randomElement)) {
+      if (biasedCoinFlip(0.6)) {
+        randomElement = randomSample(activeIdentifiers);
+      }
+    }
     randomFullOrder.push(randomElement);
   }
   // Filters out temp things

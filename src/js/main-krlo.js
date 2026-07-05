@@ -6,6 +6,7 @@ import leversData from "../../resources/leversData.json";
 
 let groupingFactor = 7;
 let difficulty = 1;
+let delayClaw = true;
 
 const inputGroupingFactorValidation = document.getElementById(
   "inputGroupingFactorValidation"
@@ -29,13 +30,18 @@ function inputDifficultyOnchange(e) {
 }
 document.getElementById("inputDifficulty").onchange = inputDifficultyOnchange;
 
+function inputDelayClawOnchange(e) {
+  delayClaw = e.target.checked;
+}
+document.getElementById("inputDelayClaw").onchange = inputDelayClawOnchange;
+
 const hksmLink = document.getElementById("hksmLink");
 const hksmLinkAlt = document.getElementById("hksmLinkAlt");
 
 document.getElementById("generateButton").onclick = () => {
-  console.log(`Difficulty: ${difficulty}\nGrouping factor: ${groupingFactor}`);
+  console.log(`Difficulty: ${difficulty}\nDelay claw: ${delayClaw}\nGrouping factor: ${groupingFactor}`);
   const config = { logicData: logic, itemsData: leversData };
-  const options = { difficulty, groupingFactor };
+  const options = { difficulty, groupingFactor, delayClaw };
   const order = getRandomOrder(config, options);
   const textOrder = makeTextOrder(order, leversData);
   outputOrder(textOrder);
