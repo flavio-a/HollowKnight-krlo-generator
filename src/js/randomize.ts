@@ -19,7 +19,7 @@ export type Options = {
   delayClaw?: boolean;
 };
 
-const defaultOptions: Options = { difficulty: 1, groupingFactor: 0, delayClaw: true };
+const defaultOptions: Options = { difficulty: 1, groupingFactor: 0, delayClaw: false };
 
 function randomSample<T>(array: Array<T>): T {
   return array[Math.floor(Math.random() * array.length)];

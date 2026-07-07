@@ -15,7 +15,6 @@ isma: claw + cdash
 shade_cloak: Lever-Abyss_Lighthouse + (claw || difficulty >= 2)
 dnail: (blue_lake + Switch-Lower_Resting_Grounds) || (claw + enter_peak)
 tram_pass: Lever-Failed_Tramway_Right + claw
-# To check if it's actually needed
 dive: Lever-Sanctum_Soul_Warrior + (claw || difficulty >= 2)
 
 # (Some) Locations
@@ -96,8 +95,8 @@ Lever-Sanctum_West_Lower: claw + Lever-Sanctum_Soul_Warrior
 Lever-Shade_Soul_Exit: claw + enter_peak + money + (Lever-City_Bridge_Above_Fountain || Lever-City_Above_Lemm_Left)
 
 # Waterways
-Lever-Dung_Defender: waterways
-Lever-Waterways_Hwurmp_Arena: waterways
+Lever-Dung_Defender: claw + waterways
+Lever-Waterways_Hwurmp_Arena: claw + waterways
 Lever-Emilitia: (claw + cdash + waterways) || (claw + cdash + right_city + difficulty >= 1)
 
 # Crystal Peak
