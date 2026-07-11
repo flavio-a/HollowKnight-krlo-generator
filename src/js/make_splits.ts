@@ -17,15 +17,18 @@ function makeHKSMJSON(order: Array<string>, options: Options): HKSMSplits {
   const version = packagejson.version;
   let hksmjson: HKSMSplits = structuredClone(hksmtemplate);
   // Splits
-  hksmjson.splitIds = Array(order.length).fill("ManualSplit");
+  hksmjson.splitIds = Array(order.length).fill("OnGhostCoinsIncremented");
+  hksmjson.splitIds[62] = "HuntersMark";
   // Split names
-  hksmjson.names.ManualSplit = order;
+  hksmjson.names.OnGhostCoinsIncremented = order;
   // Variables
   hksmjson.variables["Krlo generator version"] = packagejson.version;
   hksmjson.variables["Krlo generator difficulty"] =
     options.difficulty.toString();
   hksmjson.variables["Krlo generator grouping factor"] =
     options.groupingFactor.toString();
+  hksmjson.variables["Krlo generator delay claw"] =
+    options.delayClaw.toString();
   return hksmjson;
 }
 

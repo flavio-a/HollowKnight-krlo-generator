@@ -2,7 +2,8 @@
   "categoryName": "Kronk% RLO",
   "splitIds": [],
   "names": {
-    "ManualSplit": []
+    "HuntersMark": "KRONK",
+    "OnGhostCoinsIncremented": []
   },
   "endTriggeringAutosplit": true,
   "gameName": "Hollow Knight Category Extensions",
