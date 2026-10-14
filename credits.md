@@ -3,3 +3,4 @@
 - Lever list and names: [HollowKnight.RandomizableLevers](https://github.com/flibber-hk/HollowKnight.RandomizableLevers/blob/main/RandomizableLevers/Resources/languagedata.json)
 - Randomizer algorithm: [SBRCO](https://github.com/dpinela/SBRCO-Programs)
 - Git commit at the bottom of the page: [HK Split Maker](https://hksplitmaker.com/)
+- Random enemies order logic and data: @Nopre on Discord

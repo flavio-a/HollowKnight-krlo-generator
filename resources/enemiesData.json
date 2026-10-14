@@ -1,0 +1,627 @@
+{
+	"Journal_Entry-Moss_Knight": {
+		"text": "Moss Knight",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Wingmould": {
+		"text": "Wingmould",
+		"group": "Palace"
+	},
+	"Journal_Entry-Crystal_Hunter": {
+		"text": "Crystal Hunter",
+		"group": "CPeak"
+	},
+	"Journal_Entry-Mosskin": {
+		"text": "Mosskin",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Crystallised_Husk": {
+		"text": "Crystallised Husk",
+		"group": "CPeak"
+	},
+	"Journal_Entry-Dirtcarver": {
+		"text": "Dirtcarver",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Husk_Guard": {
+		"text": "Husk Guard",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Traitor_Lord": {
+		"text": "Traitor Lord",
+		"group": "Garden"
+	},
+	"Journal_Entry-Flukemon": {
+		"text": "Flukemon",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Xero": {
+		"text": "Xero",
+		"group": "RestingGround"
+	},
+	"Journal_Entry-Zote": {
+		"text": "Zote",
+		"group": "Colo"
+	},
+	"Journal_Entry-Lifeseed": {
+		"text": "Lifeseed"
+	},
+	"Journal_Entry-Lightseed": {
+		"text": "Lightseed"
+	},
+	"Journal_Entry-Aspid_Hunter": {
+		"text": "Aspid Hunter",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Pale_Lurker": {
+		"text": "Pale Lurker",
+		"group": "Edge"
+	},
+	"Journal_Entry-Oblobble": {
+		"text": "Oblobble",
+		"group": "Colo"
+	},
+	"Journal_Entry-Husk_Miner": {
+		"text": "Husk Miner",
+		"group": "CPeak"
+	},
+	"Journal_Entry-Uumuu": {
+		"text": "Uumuu",
+		"group": "Archives"
+	},
+	"Journal_Entry-Deephunter": {
+		"text": "Deephunter",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Markoth": {
+		"text": "Markoth",
+		"group": "Edge"
+	},
+	"Journal_Entry-Mantis_Petra": {
+		"text": "Mantis Petra",
+		"group": "Garden"
+	},
+	"Journal_Entry-Aspid_Mother": {
+		"text": "Aspid Mother",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Grimmkin_Nightmare": {
+		"text": "Grimmkin Nightmare"
+	},
+	"Journal_Entry-No_Eyes": {
+		"text": "No Eyes",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Winged_Zoteling": {
+		"text": "Winged Zoteling",
+		"group": "GPZ"
+	},
+	"Journal_Entry-Elder_Hu": {
+		"text": "Elder Hu",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Menderbug": {
+		"text": "Menderbug",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Battle_Obble": {
+		"text": "Battle Obble",
+		"group": "Colo"
+	},
+	"Journal_Entry-Sporg": {
+		"text": "Sporg",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Maggot": {
+		"text": "Maggot",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Loodle": {
+		"text": "Loodle",
+		"group": "Garden"
+	},
+	"Journal_Entry-Shrumeling": {
+		"text": "Shrumeling",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Baldur": {
+		"text": "Baldur",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Watcher_Knight": {
+		"text": "Watcher Knight",
+		"group": "RightCity"
+	},
+	"Journal_Entry-Heavy_Fool": {
+		"text": "Heavy Fool",
+		"group": "Colo"
+	},
+	"Journal_Entry-Hornet": {
+		"text": "Hornet"
+	},
+	"Journal_Entry-Volatile_Zoteling": {
+		"text": "Volatile Zoteling",
+		"group": "GPZ"
+	},
+	"Journal_Entry-Slobbering_Husk": {
+		"text": "Slobbering Husk",
+		"group": "Infection"
+	},
+	"Journal_Entry-Massive_Moss_Charger": {
+		"text": "Massive Moss Charger",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Bluggsac": {
+		"text": "Bluggsac"
+	},
+	"Journal_Entry-Squit": {
+		"text": "Squit",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Wandering_Husk": {
+		"text": "Wandering Husk",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Royal_Retainer": {
+		"text": "Royal Retainer",
+		"group": "Palace"
+	},
+	"Journal_Entry-Galien": {
+		"text": "Galien",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Mosscreep": {
+		"text": "Mosscreep",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Moss_Charger": {
+		"text": "Moss Charger",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Charged_Lumafly": {
+		"text": "Charged Lumafly",
+		"group": "Archives"
+	},
+	"Journal_Entry-Radiance": {
+		"text": "Radiance"
+	},
+	"Journal_Entry-Lesser_Mawlek": {
+		"text": "Lesser Mawlek",
+		"group": "Basin"
+	},
+	"Journal_Entry-Little_Weaver": {
+		"text": "Little Weaver",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Nightmare_King": {
+		"text": "Nightmare King"
+	},
+	"Journal_Entry-Seal_of_Binding": {
+		"text": "Seal of Binding",
+		"group": "Palace"
+	},
+	"Journal_Entry-Soul_Warrior": {
+		"text": "Soul Warrior",
+		"group": "Sanctum"
+	},
+	"Journal_Entry-Dung_Defender": {
+		"text": "Dung Defender",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Hive_Knight": {
+		"text": "Hive Knight",
+		"group": "Hive"
+	},
+	"Journal_Entry-Mantis_Traitor": {
+		"text": "Mantis Traitor",
+		"group": "Garden"
+	},
+	"Journal_Entry-Gruzzer": {
+		"text": "Gruzzer",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Pilflip": {
+		"text": "Pilflip",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Infected_Balloon": {
+		"text": "Infected Balloon",
+		"group": "Basin"
+	},
+	"Journal_Entry-Hive_Guardian": {
+		"text": "Hive Guardian",
+		"group": "Hive"
+	},
+	"Journal_Entry-Carver_Hatcher": {
+		"text": "Carver Hatcher",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Nosk": {
+		"text": "Nosk",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Mantis_Lords": {
+		"text": "Mantis Lords",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Hwurmp": {
+		"text": "Hwurmp",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Crystal_Guardian": {
+		"text": "Crystal Guardian",
+		"group": "CPeak"
+	},
+	"Journal_Entry-Duranda": {
+		"text": "Duranda",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Furious_Vengefly": {
+		"text": "Furious Vengefly",
+		"group": "Infection"
+	},
+	"Journal_Entry-Mawlurk": {
+		"text": "Mawlurk",
+		"group": "Basin"
+	},
+	"Journal_Entry-Leaping_Husk": {
+		"text": "Leaping Husk",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Volatile_Gruzzer": {
+		"text": "Volatile Gruzzer"
+	},
+	"Journal_Entry-Husk_Sentry": {
+		"text": "Husk Sentry",
+		"group": "COT"
+	},
+	"Journal_Entry-Garpede": {
+		"text": "Garpede",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Hopping_Zoteling": {
+		"text": "Hopping Zoteling",
+		"group": "GPZ"
+	},
+	"Journal_Entry-Grimmkin_Master": {
+		"text": "Grimmkin Master"
+	},
+	"Journal_Entry-Crawlid": {
+		"text": "Crawlid",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-False_Knight": {
+		"text": "False Knight",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Hiveling": {
+		"text": "Hiveling",
+		"group": "Hive"
+	},
+	"Journal_Entry-Boofly": {
+		"text": "Boofly",
+		"group": "Edge"
+	},
+	"Journal_Entry-Cowardly_Husk": {
+		"text": "Cowardly Husk",
+		"group": "RightCity"
+	},
+	"Journal_Entry-God_Tamer": {
+		"text": "God Tamer",
+		"group": "Colo"
+	},
+	"Journal_Entry-The_Collector": {
+		"text": "The Collector"
+	},
+	"Journal_Entry-Winged_Fool": {
+		"text": "Winged Fool",
+		"group": "Colo"
+	},
+	"Journal_Entry-Flukemunga": {
+		"text": "Flukemunga",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Shadow_Creeper": {
+		"text": "Shadow Creeper",
+		"group": "Basin"
+	},
+	"Journal_Entry-Corpse_Creeper": {
+		"text": "Corpse Creeper",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Gorb": {
+		"text": "Gorb",
+		"group": "Cliffs"
+	},
+	"Journal_Entry-Grub_Mimic": {
+		"text": "Grub Mimic",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Gruz_Mother": {
+		"text": "Gruz Mother",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Flukefey": {
+		"text": "Flukefey",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Sibling": {
+		"text": "Sibling",
+		"group": "Abyss"
+	},
+	"Journal_Entry-Gulka": {
+		"text": "Gulka",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Broken_Vessel": {
+		"text": "Broken Vessel"
+	},
+	"Journal_Entry-Armoured_Squit": {
+		"text": "Armoured Squit",
+		"group": "Colo"
+	},
+	"Journal_Entry-Gluttonous_Husk": {
+		"text": "Gluttonous Husk",
+		"group": "RightCity"
+	},
+	"Journal_Entry-Heavy_Sentry": {
+		"text": "Heavy Sentry",
+		"group": "COT"
+	},
+	"Journal_Entry-Ambloom": {
+		"text": "Ambloom",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Death_Loodle": {
+		"text": "Death Loodle",
+		"group": "Colo"
+	},
+	"Journal_Entry-Shardmite": {
+		"text": "Shardmite",
+		"group": "CPeak"
+	},
+	"Journal_Entry-Fungoon": {
+		"text": "Fungoon",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Lance_Sentry": {
+		"text": "Lance Sentry",
+		"group": "COT"
+	},
+	"Journal_Entry-Uoma": {
+		"text": "Uoma",
+		"group": "FogCanyon"
+	},
+	"Journal_Entry-Husk_Bully": {
+		"text": "Husk Bully",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-White_Defender": {
+		"text": "White Defender",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Crystal_Crawler": {
+		"text": "Crystal Crawler",
+		"group": "CPeak"
+	},
+	"Journal_Entry-Hive_Soldier": {
+		"text": "Hive Soldier",
+		"group": "Hive"
+	},
+	"Journal_Entry-Mossy_Vagabond": {
+		"text": "Mossy Vagabond",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Mossfly": {
+		"text": "Mossfly",
+		"group": "Garden"
+	},
+	"Journal_Entry-Husk_Dandy": {
+		"text": "Husk Dandy",
+		"group": "RightCity"
+	},
+	"Journal_Entry-Obble": {
+		"text": "Obble",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Folly": {
+		"text": "Folly",
+		"group": "Sanctum"
+	},
+	"Journal_Entry-Aluba": {
+		"text": "Aluba",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Shrumal_Warrior": {
+		"text": "Shrumal Warrior",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Flukemarm": {
+		"text": "Flukemarm",
+		"group": "Waterways"
+	},
+	"Journal_Entry-Fungling": {
+		"text": "Fungling",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Mistake": {
+		"text": "Mistake",
+		"group": "Sanctum"
+	},
+	"Journal_Entry-Void_Tendrils": {
+		"text": "Void Tendrils",
+		"group": "Abyss"
+	},
+	"Journal_Entry-Maskfly": {
+		"text": "Maskfly",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Volatile_Mosskin": {
+		"text": "Volatile Mosskin",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Deepling": {
+		"text": "Deepling",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Goam": {
+		"text": "Goam",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Winged_Sentry": {
+		"text": "Winged Sentry",
+		"group": "COT"
+	},
+	"Journal_Entry-Sharp_Baldur": {
+		"text": "Sharp Baldur",
+		"group": "Colo"
+	},
+	"Journal_Entry-Mantis_Youth": {
+		"text": "Mantis Youth",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Great_Hopper": {
+		"text": "Great Hopper",
+		"group": "Edge"
+	},
+	"Journal_Entry-Belfly": {
+		"text": "Belfly"
+	},
+	"Journal_Entry-Gorgeous_Husk": {
+		"text": "Gorgeous Husk",
+		"group": "RightCity"
+	},
+	"Journal_Entry-Mantis_Warrior": {
+		"text": "Mantis Warrior",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Entombed_Husk": {
+		"text": "Entombed Husk",
+		"group": "RestingGround"
+	},
+	"Journal_Entry-Volt_Twister": {
+		"text": "Volt Twister",
+		"group": "Colo"
+	},
+	"Journal_Entry-Kingsmould": {
+		"text": "Kingsmould",
+		"group": "Palace"
+	},
+	"Journal_Entry-Primal_Aspid": {
+		"text": "Primal Aspid",
+		"group": "Edge"
+	},
+	"Journal_Entry-Husk_Hive": {
+		"text": "Husk Hive",
+		"group": "Hive"
+	},
+	"Journal_Entry-Ooma": {
+		"text": "Ooma",
+		"group": "FogCanyon"
+	},
+	"Journal_Entry-Great_Husk_Sentry": {
+		"text": "Great Husk Sentry",
+		"group": "RightCity"
+	},
+	"Journal_Entry-Stalking_Devout": {
+		"text": "Stalking Devout",
+		"group": "Deepnest"
+	},
+	"Journal_Entry-Fungified_Husk": {
+		"text": "Fungified Husk",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Violent_Husk": {
+		"text": "Violent Husk",
+		"group": "Infection"
+	},
+	"Journal_Entry-Fool_Eater": {
+		"text": "Fool Eater",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Marmu": {
+		"text": "Marmu",
+		"group": "Garden"
+	},
+	"Journal_Entry-Soul_Master": {
+		"text": "Soul Master",
+		"group": "Sanctum"
+	},
+	"Journal_Entry-Hopper": {
+		"text": "Hopper",
+		"group": "Edge"
+	},
+	"Journal_Entry-Husk_Warrior": {
+		"text": "Husk Warrior",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Aspid_Hatchling": {
+		"text": "Aspid Hatchling",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Durandoo": {
+		"text": "Durandoo",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Hollow_Knight": {
+		"text": "Hollow Knight"
+	},
+	"Journal_Entry-Grey_Prince_Zote": {
+		"text": "Grey Prince Zote",
+		"group": "GPZ"
+	},
+	"Journal_Entry-Vengefly": {
+		"text": "Vengefly",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Grimm": {
+		"text": "Grimm"
+	},
+	"Journal_Entry-Sturdy_Fool": {
+		"text": "Sturdy Fool",
+		"group": "Colo"
+	},
+	"Journal_Entry-Grimmkin_Novice": {
+		"text": "Grimmkin Novice"
+	},
+	"Journal_Entry-Shielded_Fool": {
+		"text": "Shielded Fool",
+		"group": "Colo"
+	},
+	"Journal_Entry-Shrumal_Ogre": {
+		"text": "Shrumal Ogre",
+		"group": "Fungal"
+	},
+	"Journal_Entry-Brooding_Mawlek": {
+		"text": "Brooding Mawlek",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Spiny_Husk": {
+		"text": "Spiny Husk",
+		"group": "Garden"
+	},
+	"Journal_Entry-Tiktik": {
+		"text": "Tiktik",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Husk_Hornhead": {
+		"text": "Husk Hornhead",
+		"group": "Crossroads"
+	},
+	"Journal_Entry-Glimback": {
+		"text": "Glimback",
+		"group": "CPeak"
+	},
+	"Journal_Entry-Soul_Twister": {
+		"text": "Soul Twister",
+		"group": "COT"
+	},
+	"Journal_Entry-Vengefly_King": {
+		"text": "Vengefly King",
+		"group": "Greenpath"
+	},
+	"Journal_Entry-Elder_Baldur": {
+		"text": "Elder Baldur",
+		"group": "Crossroads"
+	}
+}

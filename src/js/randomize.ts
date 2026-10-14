@@ -1,5 +1,6 @@
 "use strict";
 
+import { SyntaxError } from "./lib/logicLineParser";
 import { parse } from "./lib/logicLineParser";
 import { Logic, preprocessLogic } from "./preprocessLogic";
 
@@ -19,7 +20,7 @@ export type Options = {
   delayClaw?: boolean;
 };
 
-const defaultOptions: Options = { difficulty: 1, groupingFactor: 0, delayClaw: false };
+const defaultOptions = { difficulty: 1, groupingFactor: 0, delayClaw: false };
 
 function randomSample<T>(array: Array<T>): T {
   return array[Math.floor(Math.random() * array.length)];
@@ -34,24 +35,22 @@ function isClaw(elem: string): boolean {
 }
 
 function evaluateLogic(sequence: Array<string>, logic: Logic): boolean {
-  if (logic.kind === "true") {
-    return true;
-  }
-  if (logic.kind === "false") {
-    return false;
-  }
-  if (logic.kind === "min-difficulty") {
-    // shouldn't appear here
-    return false;
-  }
-  if (logic.kind === "identifier") {
-    return sequence.includes(logic.value);
-  }
-  if (logic.kind === "and") {
-    return logic.operands.every((op) => evaluateLogic(sequence, op));
-  }
-  if (logic.kind === "or") {
-    return logic.operands.some((op) => evaluateLogic(sequence, op));
+  switch (logic.kind) {
+    case "true":
+      return true;
+    case "false":
+      return false;
+    case "min-difficulty":
+      // shouldn't appear here
+      return false;
+    case "identifier":
+      return sequence.includes(logic.value);
+    case "and":
+      return logic.operands.every((op) => evaluateLogic(sequence, op));
+    case "or":
+      return logic.operands.some((op) => evaluateLogic(sequence, op));
+    // default:
+    //   throw new RangeError(`Unexpected value for logic.kind: ${logic.kind}`);
   }
 }
 
@@ -75,35 +74,43 @@ export function getRandomOrder(
   const groupingFactor =
     options.groupingFactor ?? defaultOptions.groupingFactor;
   const isTerminal = (lhs: string) => !!itemsData[lhs];
-  const logics = preprocessLogic(parse(logicData), isTerminal, difficulty);
-  // Makes a list of everything, including temp things
-  const allIdentifiers = Object.keys(logics);
-  let randomFullOrder: Array<string> = [];
-  while (allIdentifiers.length > randomFullOrder.length) {
-    let activeIdentifiers = getActiveIdentifierList(randomFullOrder, logics);
-    // Grouping factor logic: with the given chance, filters active identifiers
-    // to nearby levers (unless the result is empty)
-    if (biasedCoinFlip(groupingFactor / 10)) {
-      const last_item = randomFullOrder[randomFullOrder.length - 1];
-      const last_group = itemsData[last_item]?.group;
-      if (!!last_group) {
-        const activeIdentifiersSameGroup = activeIdentifiers.filter(
-          (ide) => itemsData[ide]?.group === last_group
-        );
-        if (activeIdentifiersSameGroup.length > 0) {
-          activeIdentifiers = activeIdentifiersSameGroup;
+  try {
+    const logics = preprocessLogic(parse(logicData), isTerminal, difficulty);
+    // Makes a list of everything, including temp things
+    const allIdentifiers = Object.keys(logics);
+    let randomFullOrder: Array<string> = [];
+    while (allIdentifiers.length > randomFullOrder.length) {
+      let activeIdentifiers = getActiveIdentifierList(randomFullOrder, logics);
+      // Grouping factor logic: with the given chance, filters active identifiers
+      // to nearby levers (unless the result is empty)
+      if (biasedCoinFlip(groupingFactor / 10)) {
+        const last_item = randomFullOrder[randomFullOrder.length - 1];
+        const last_group = itemsData[last_item]?.group;
+        if (!!last_group) {
+          const activeIdentifiersSameGroup = activeIdentifiers.filter(
+            (ide) => itemsData[ide]?.group === last_group
+          );
+          if (activeIdentifiersSameGroup.length > 0) {
+            activeIdentifiers = activeIdentifiersSameGroup;
+          }
         }
       }
-    }
-    let randomElement = randomSample(activeIdentifiers);
-    // If delay claw is active and draws claw, redraw with 60% chance
-    if ((options.delayClaw ?? defaultOptions.delayClaw) && isClaw(randomElement)) {
-      if (biasedCoinFlip(0.6)) {
-        randomElement = randomSample(activeIdentifiers);
+      let randomElement = randomSample(activeIdentifiers);
+      // If delay claw is active and draws claw, redraw with 60% chance
+      if ((options.delayClaw ?? defaultOptions.delayClaw) && isClaw(randomElement)) {
+        if (biasedCoinFlip(0.6)) {
+          randomElement = randomSample(activeIdentifiers);
+        }
       }
+      randomFullOrder.push(randomElement);
     }
-    randomFullOrder.push(randomElement);
+    // Filters out temp things
+    return randomFullOrder.filter(isTerminal);
   }
-  // Filters out temp things
-  return randomFullOrder.filter(isTerminal);
+  catch (err) {
+    if (err instanceof SyntaxError) {
+      console.log(err.location);
+    }
+    throw err;
+  }
 }

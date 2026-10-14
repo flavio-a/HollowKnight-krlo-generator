@@ -16,6 +16,7 @@ module.exports = {
     main: "./src/js/main.js",
     krlo: "./src/js/main-krlo.js",
     gbrso: "./src/js/main-gbrso.js",
+    reo: "./src/js/main-reo.js",
   },
   output: {
     filename: "[name].bundle.js",
@@ -42,6 +43,11 @@ module.exports = {
       template: "./src/gbrso.html",
       filename: "gbrso.html",
       chunks: ["main", "gbrso"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/reo.html",
+      filename: "reo.html",
+      chunks: ["main", "reo"],
     }),
     new webpack.EnvironmentPlugin({
       GIT_VERSION: git("describe --always"),

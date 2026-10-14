@@ -1,11 +1,19 @@
 Rules
   = rules:RuleLine+ { return rules.filter(r => !!r) }
 
+LineEnd
+  = "\r"? "\n"
+
+Whitespace
+  = [ \t\n\r]
+
 RuleLine
-  = "\n" {} / "#" [^\n]* "\n" {} / Rule
+  = LineEnd {}
+  / "#" [^\r\n]* LineEnd {}
+  / Rule
 
 Rule
-  = lhs:Identifier ":" _ logic:Logic "\n"? { return {lhs, logic}; }
+  = lhs:Identifier ":" _ logic:Logic Whitespace* LineEnd? { return {lhs, logic}; }
 
 Identifier
   =	[a-zA-Z_\-']+ { return text(); }
@@ -17,7 +25,8 @@ Integer "integer"
   = _ [0-9]+ { return parseInt(text(), 10); }
 
 Basic
-  = Difficulty / ide:Identifier {return {kind: "identifier", value: ide}; }
+  = Difficulty
+  / ide:Identifier {return {kind: "identifier", value: ide}; }
 
 Logic
   = head:Term tail:(_ "+" _ t:Term { return t; })* {
@@ -32,7 +41,8 @@ Term
   }
 
 Factor
-  = "(" _ expr:Logic _ ")" { return expr; } / Basic
+  = "(" _ expr:Logic _ ")" { return expr; }
+  / Basic
 
 _ "whitespace"
-  = [ \t\n\r]*
+  = Whitespace*

@@ -1,0 +1,251 @@
+# Settings
+# difficulty:
+# - easy (0): basic skips, default
+# - medium (1): includes iBaldur
+# - hard (2): includes saving all 3 enemies before false knight
+# flags: lever_skips, pantheon_bosses (not implemented)
+
+
+# Greenpath
+Journal_Entry-Moss_Knight: greenpath
+Journal_Entry-Mosskin: greenpath
+Journal_Entry-No_Eyes: greenpath + dnail
+Journal_Entry-Massive_Moss_Charger: greenpath
+Journal_Entry-Squit: greenpath
+Journal_Entry-Mosscreep: greenpath
+Journal_Entry-Moss_Charger: greenpath
+Journal_Entry-Duranda: greenpath
+Journal_Entry-Gulka: greenpath
+Journal_Entry-Obble: greenpath
+Journal_Entry-Aluba: greenpath + Journal_Entry-Hornet
+Journal_Entry-Maskfly: greenpath
+Journal_Entry-Volatile_Mosskin: greenpath
+Journal_Entry-Fool_Eater: greenpath
+Journal_Entry-Durandoo: greenpath
+Journal_Entry-Vengefly_King: greenpath + Journal_Entry-Moss_Knight
+
+# Palace
+Journal_Entry-Wingmould: palace
+Journal_Entry-Royal_Retainer: palace
+Journal_Entry-Seal_of_Binding: palace
+Journal_Entry-Kingsmould: palace
+
+# CPeak
+Journal_Entry-Crystal_Hunter: cpeak
+Journal_Entry-Crystallised_Husk: cpeak + (claw || wings)
+Journal_Entry-Husk_Miner: cpeak
+Journal_Entry-Crystal_Guardian: cpeak + (claw || wings)
+Journal_Entry-Shardmite: cpeak + (claw || wings)
+Journal_Entry-Crystal_Crawler: cpeak + (claw || wings)
+Journal_Entry-Glimback: cpeak
+
+# Deepnest
+Journal_Entry-Dirtcarver: deepnest
+Journal_Entry-Deephunter: claw
+Journal_Entry-Galien: claw + dnail
+Journal_Entry-Little_Weaver: deepnest
+Journal_Entry-Carver_Hatcher: deepnest
+Journal_Entry-Nosk: deepnest
+Journal_Entry-Garpede: deepnest
+Journal_Entry-Corpse_Creeper: deepnest
+Journal_Entry-Grub_Mimic: deepnest
+Journal_Entry-Mossy_Vagabond: deepnest
+Journal_Entry-Deepling: deepnest
+Journal_Entry-Stalking_Devout: deepnest
+
+# Crossroads
+Journal_Entry-Husk_Guard: Journal_Entry-Aspid_Hunter
+Journal_Entry-Aspid_Hunter: - 
+Journal_Entry-Aspid_Mother: Journal_Entry-Aspid_Hunter
+Journal_Entry-Menderbug: - 
+Journal_Entry-Maggot: Journal_Entry-False_Knight + claw + dnail
+Journal_Entry-Baldur: vs
+Journal_Entry-Wandering_Husk: - 
+Journal_Entry-Gruzzer: - 
+Journal_Entry-Leaping_Husk: Journal_Entry-Aspid_Hunter
+Journal_Entry-Crawlid: - 
+Journal_Entry-False_Knight: Journal_Entry-Aspid_Hunter + Journal_Entry-Husk_Hornhead + Journal_Entry-Husk_Bully + Journal_Entry-Wandering_Husk + Journal_Entry-Vengefly
+Journal_Entry-Gruz_Mother: Journal_Entry-Aspid_Hunter
+Journal_Entry-Husk_Bully: Journal_Entry-Aspid_Hunter
+Journal_Entry-Goam: Journal_Entry-Aspid_Hunter + dive
+Journal_Entry-Husk_Warrior: Journal_Entry-Aspid_Hunter
+Journal_Entry-Aspid_Hatchling: Journal_Entry-Aspid_Hunter
+Journal_Entry-Vengefly: - 
+Journal_Entry-Brooding_Mawlek: - 
+Journal_Entry-Tiktik: - 
+Journal_Entry-Husk_Hornhead: Journal_Entry-Aspid_Hunter
+Journal_Entry-Elder_Baldur: vs
+
+# Garden
+Journal_Entry-Traitor_Lord: garden + shade_cloak + Journal_Entry-Mantis_Traitor
+Journal_Entry-Mantis_Petra: garden
+Journal_Entry-Loodle: garden + Journal_Entry-Mantis_Petra + Journal_Entry-Mantis_Traitor + Journal_Entry-Spiny_Husk
+Journal_Entry-Marmu: garden + Journal_Entry-Mantis_Petra + Journal_Entry-Mantis_Traitor + Journal_Entry-Spiny_Husk
+Journal_Entry-Mantis_Traitor: garden
+Journal_Entry-Mossfly: garden
+Journal_Entry-Spiny_Husk: garden
+
+# Waterways
+Journal_Entry-Flukemon: waterways
+Journal_Entry-Dung_Defender: waterways
+Journal_Entry-Pilflip: waterways
+Journal_Entry-Hwurmp: waterways
+Journal_Entry-Flukemunga: waterways + dive + Journal_Entry-Belfly
+Journal_Entry-Flukefey: waterways
+Journal_Entry-White_Defender: waterways + Journal_Entry-Dung_Defender + lurien + monomon + herrah
+Journal_Entry-Flukemarm: waterways + dive + Journal_Entry-Flukefey
+
+# RestingGround
+Journal_Entry-Xero: dnail
+Journal_Entry-Entombed_Husk: dnail + dive
+
+# Colo
+Journal_Entry-Zote: edge + Journal_Entry-Sharp_Baldur + Journal_Entry-Sturdy_Fool + Journal_Entry-Shielded_Fool + Journal_Entry-Corpse_Creeper + Journal_Entry-Vengefly_King + Journal_Entry-Vengefly + Journal_Entry-Primal_Aspid + Journal_Entry-Volatile_Gruzzer + Journal_Entry-Gruz_Mother
+Journal_Entry-Oblobble: Journal_Entry-Battle_Obble
+Journal_Entry-Battle_Obble: Journal_Entry-Armoured_Squit + Journal_Entry-Hopper + Journal_Entry-Great_Hopper + Journal_Entry-Grub_Mimic + Journal_Entry-Belfly
+Journal_Entry-Heavy_Fool: Journal_Entry-Zote
+Journal_Entry-God_Tamer: Journal_Entry-Volt_Twister + Journal_Entry-Lesser_Mawlek + Journal_Entry-Brooding_Mawlek
+Journal_Entry-Winged_Fool: Journal_Entry-Heavy_Fool
+Journal_Entry-Armoured_Squit: Journal_Entry-Winged_Fool
+Journal_Entry-Death_Loodle: Journal_Entry-Oblobble + Journal_Entry-Furious_Vengefly
+Journal_Entry-Sharp_Baldur: Journal_Entry-Shielded_Fool
+Journal_Entry-Volt_Twister: Journal_Entry-Death_Loodle + Journal_Entry-Mantis_Traitor + Journal_Entry-Mantis_Petra + Journal_Entry-Soul_Twister + Journal_Entry-Mistake + Journal_Entry-Soul_Warrior + Journal_Entry-Folly
+Journal_Entry-Sturdy_Fool: Journal_Entry-Sharp_Baldur
+Journal_Entry-Shielded_Fool: Journal_Entry-Belfly
+
+# No
+Journal_Entry-Lifeseed: basin || infection
+Journal_Entry-Lightseed: - 
+Journal_Entry-Grimmkin_Nightmare: claw + wings + Journal_Entry-Grimm
+Journal_Entry-Hornet: Journal_Entry-Moss_Knight || claw
+Journal_Entry-Bluggsac: claw
+Journal_Entry-Radiance: Journal_Entry-Kingsmould + Journal_Entry-Traitor_Lord + Journal_Entry-Hollow_Knight
+Journal_Entry-Nightmare_King: Journal_Entry-Grimmkin_Nightmare
+Journal_Entry-Volatile_Gruzzer: infection || (Journal_Entry-Sharp_Baldur + Journal_Entry-Sturdy_Fool + Journal_Entry-Shielded_Fool + Journal_Entry-Vengefly + Journal_Entry-Primal_Aspid + Journal_Entry-Vengefly_King)
+Journal_Entry-Grimmkin_Master: Journal_Entry-Grimmkin_Novice
+Journal_Entry-The_Collector: garden + Journal_Entry-Mantis_Traitor
+Journal_Entry-Broken_Vessel: claw + cdash
+Journal_Entry-Belfly: claw
+Journal_Entry-Hollow_Knight: lurien + monomon + herrah
+Journal_Entry-Grimm: Journal_Entry-Grimmkin_Master
+Journal_Entry-Grimmkin_Novice: claw + dnail
+
+# Edge
+Journal_Entry-Pale_Lurker: claw
+Journal_Entry-Markoth: shade_cloak
+Journal_Entry-Boofly: claw
+Journal_Entry-Great_Hopper: claw
+Journal_Entry-Primal_Aspid: claw
+Journal_Entry-Hopper: claw
+
+# Archives
+Journal_Entry-Uumuu: claw + (cdash || ismas)
+Journal_Entry-Charged_Lumafly: Journal_Entry-Uumuu
+
+# GPZ
+Journal_Entry-Winged_Zoteling: Journal_Entry-Grey_Prince_Zote
+Journal_Entry-Volatile_Zoteling: Journal_Entry-Hopping_Zoteling
+Journal_Entry-Hopping_Zoteling: Journal_Entry-Grey_Prince_Zote
+Journal_Entry-Grey_Prince_Zote: wings + Journal_Entry-Zote 
+
+# Fungal
+Journal_Entry-Elder_Hu: dnail + fungal
+Journal_Entry-Sporg: fungal
+Journal_Entry-Shrumeling: fungal 
+Journal_Entry-Mantis_Lords: fungal + claw
+Journal_Entry-Ambloom: fungal
+Journal_Entry-Fungoon: fungal
+Journal_Entry-Shrumal_Warrior: fungal
+Journal_Entry-Fungling: fungal
+Journal_Entry-Mantis_Youth: fungal
+Journal_Entry-Mantis_Warrior: fungal
+Journal_Entry-Fungified_Husk: fungal
+Journal_Entry-Shrumal_Ogre: fungal
+
+# RightCity
+Journal_Entry-Watcher_Knight: claw + city + Journal_Entry-Great_Husk_Sentry
+Journal_Entry-Cowardly_Husk: claw
+Journal_Entry-Gluttonous_Husk: claw
+Journal_Entry-Husk_Dandy: claw
+Journal_Entry-Gorgeous_Husk: claw 
+Journal_Entry-Great_Husk_Sentry: claw
+
+# Infection
+Journal_Entry-Slobbering_Husk: infection
+Journal_Entry-Furious_Vengefly: infection
+Journal_Entry-Violent_Husk: infection
+
+# Basin
+Journal_Entry-Lesser_Mawlek: basin
+Journal_Entry-Infected_Balloon: cdash
+Journal_Entry-Mawlurk: cdash
+Journal_Entry-Shadow_Creeper: basin
+
+# Sanctum
+Journal_Entry-Soul_Warrior: sanctum
+Journal_Entry-Folly: sanctum
+Journal_Entry-Mistake: sanctum
+Journal_Entry-Soul_Master: sanctum
+
+# Hive
+Journal_Entry-Hive_Knight: hive
+Journal_Entry-Hive_Guardian: hive
+Journal_Entry-Hiveling: hive
+Journal_Entry-Hive_Soldier: hive
+Journal_Entry-Husk_Hive: hive
+
+# COT
+Journal_Entry-Husk_Sentry: city
+Journal_Entry-Lance_Sentry: city
+Journal_Entry-Winged_Sentry: city
+Journal_Entry-Soul_Twister: city
+Journal_Entry-Heavy_Sentry: city
+
+# Cliffs
+Journal_Entry-Gorb: claw + dnail
+
+# Abyss
+Journal_Entry-Sibling: Journal_Entry-Hornet
+Journal_Entry-Void_Tendrils: Journal_Entry-Hornet + Journal_Entry-Sibling
+
+# FogCanyon
+Journal_Entry-Uoma: greenpath
+Journal_Entry-Ooma: greenpath
+
+# Skills:
+vs: amound + amound_escape
+dash: Journal_Entry-Moss_Knight + Journal_Entry-Hornet
+claw: Journal_Entry-Vengefly_King + (dash || vs)
+cdash: claw + (dash || vs)
+wings: claw + (cdash || (vs + dash)) + Journal_Entry-Shadow_Creeper + Journal_Entry-Broken_Vessel
+isma: claw + cdash + Journal_Entry-Hwurmp
+shade_cloak: Journal_Entry-Hornet + basin + (claw || wings || dgate)
+dnail: claw
+tram_pass: claw
+dive: claw + Journal_Entry-Soul_Master
+dgate: Journal_Entry-Xero + Journal_Entry-Elder_Hu + Journal_Entry-False_Knight + Journal_Entry-No_Eyes + Journal_Entry-Galien
+woke_nail: Journal_Entry-Xero + Journal_Entry-Elder_Hu + Journal_Entry-Gorb + Journal_Entry-False_Knight + Journal_Entry-No_Eyes + Journal_Entry-Galien + Journal_Entry-Markoth + Journal_Entry-Marmu + Journal_Entry-Broken_Vessel
+
+# Area Access
+
+amound: Journal_Entry-False_Knight
+amound_escape: Journal_Entry-Elder_Baldur
+greenpath: vs || claw || Journal_Entry-Elder_Baldur
+palace: woke_nail + basin + claw + wings
+cpeak: claw
+deepnest: claw
+garden: claw || shade_cloak
+city: claw
+waterways: claw
+edge: claw
+basin: claw
+fungal: vs || dash
+hive: claw + dash + tram_pass
+
+sanctum: Journal_Entry-Soul_Twister
+
+# Misc
+lurien: Journal_Entry-Watcher_Knight
+monomon: Journal_Entry-Uumuu
+herrah: deepnest
+infection: lurien || monomon || herrah || wings
