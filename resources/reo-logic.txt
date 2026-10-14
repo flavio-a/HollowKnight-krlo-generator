@@ -143,7 +143,7 @@ Journal_Entry-Uumuu: claw + (cdash || ismas)
 Journal_Entry-Charged_Lumafly: Journal_Entry-Uumuu
 
 # GPZ
-Journal_Entry-Winged_Zoteling: Journal_Entry-Grey_Prince_Zote
+Journal_Entry-Winged_Zoteling: wings + Journal_Entry-Zote
 Journal_Entry-Volatile_Zoteling: Journal_Entry-Hopping_Zoteling
 Journal_Entry-Hopping_Zoteling: Journal_Entry-Grey_Prince_Zote
 Journal_Entry-Grey_Prince_Zote: wings + Journal_Entry-Zote 

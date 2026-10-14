@@ -10,7 +10,7 @@ function makeLi(identifier: string): Element {
 }
 
 export function outputOrder(textOrder: Array<string>) {
-  const ul = document.getElementById("randomOrderOutput");
+  const ul = document.getElementById("randomOrderOutput")!;
   ul.textContent = "";
   for (const ide of textOrder) {
     ul.appendChild(makeLi(ide));
