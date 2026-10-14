@@ -294,6 +294,10 @@
 		"text": "False Knight",
 		"group": "Crossroads"
 	},
+	"Journal_Entry-Failed_Champion": {
+		"text": "Failed Champion",
+		"group": "Crossroads"
+	},
 	"Journal_Entry-Hiveling": {
 		"text": "Hiveling",
 		"group": "Hive"
@@ -355,6 +359,9 @@
 	},
 	"Journal_Entry-Broken_Vessel": {
 		"text": "Broken Vessel"
+	},
+	"Journal_Entry-Lost_Kin": {
+		"text": "Lost Kin"
 	},
 	"Journal_Entry-Armoured_Squit": {
 		"text": "Armoured Squit",
@@ -545,6 +552,10 @@
 	},
 	"Journal_Entry-Soul_Master": {
 		"text": "Soul Master",
+		"group": "Sanctum"
+	},
+	"Journal_Entry-Soul_Tyrant": {
+		"text": "Soul Tyrant",
 		"group": "Sanctum"
 	},
 	"Journal_Entry-Hopper": {

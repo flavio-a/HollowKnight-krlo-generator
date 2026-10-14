@@ -47,7 +47,7 @@ Journal_Entry-Little_Weaver: deepnest
 Journal_Entry-Carver_Hatcher: deepnest
 Journal_Entry-Nosk: deepnest
 Journal_Entry-Garpede: deepnest
-Journal_Entry-Corpse_Creeper: deepnest
+Journal_Entry-Corpse_Creeper: deepnest 
 Journal_Entry-Grub_Mimic: deepnest
 Journal_Entry-Mossy_Vagabond: deepnest
 Journal_Entry-Deepling: deepnest
@@ -64,6 +64,7 @@ Journal_Entry-Wandering_Husk: -
 Journal_Entry-Gruzzer: - 
 Journal_Entry-Leaping_Husk: Journal_Entry-Aspid_Hunter
 Journal_Entry-Crawlid: - 
+Journal_Entry-Failed_Champion: Journal_Entry-False_Knight + dnail + claw
 Journal_Entry-False_Knight: Journal_Entry-Aspid_Hunter + Journal_Entry-Husk_Hornhead + Journal_Entry-Husk_Bully + Journal_Entry-Wandering_Husk + Journal_Entry-Vengefly
 Journal_Entry-Gruz_Mother: Journal_Entry-Aspid_Hunter
 Journal_Entry-Husk_Bully: Journal_Entry-Aspid_Hunter
@@ -114,8 +115,8 @@ Journal_Entry-Sturdy_Fool: Journal_Entry-Sharp_Baldur
 Journal_Entry-Shielded_Fool: Journal_Entry-Belfly
 
 # No
-Journal_Entry-Lifeseed: basin || infection
-Journal_Entry-Lightseed: - 
+Journal_Entry-Lifeseed: -
+Journal_Entry-Lightseed: basin || infection
 Journal_Entry-Grimmkin_Nightmare: claw + wings + Journal_Entry-Grimm
 Journal_Entry-Hornet: Journal_Entry-Moss_Knight || claw
 Journal_Entry-Bluggsac: claw
@@ -124,7 +125,6 @@ Journal_Entry-Nightmare_King: Journal_Entry-Grimmkin_Nightmare
 Journal_Entry-Volatile_Gruzzer: infection || (Journal_Entry-Sharp_Baldur + Journal_Entry-Sturdy_Fool + Journal_Entry-Shielded_Fool + Journal_Entry-Vengefly + Journal_Entry-Primal_Aspid + Journal_Entry-Vengefly_King)
 Journal_Entry-Grimmkin_Master: Journal_Entry-Grimmkin_Novice
 Journal_Entry-The_Collector: garden + Journal_Entry-Mantis_Traitor
-Journal_Entry-Broken_Vessel: claw + cdash
 Journal_Entry-Belfly: claw
 Journal_Entry-Hollow_Knight: lurien + monomon + herrah
 Journal_Entry-Grimm: Journal_Entry-Grimmkin_Master
@@ -180,12 +180,15 @@ Journal_Entry-Lesser_Mawlek: basin
 Journal_Entry-Infected_Balloon: cdash
 Journal_Entry-Mawlurk: cdash
 Journal_Entry-Shadow_Creeper: basin
+Journal_Entry-Broken_Vessel: claw + cdash
+Journal_Entry-Lost_Kin: Journal_Entry-Broken_Vessel + dnail
 
 # Sanctum
 Journal_Entry-Soul_Warrior: sanctum
 Journal_Entry-Folly: sanctum
 Journal_Entry-Mistake: sanctum
 Journal_Entry-Soul_Master: sanctum
+Journal_Entry-Soul_Tyrant: Journal_Entry-Soul_Master + dnail + dash
 
 # Hive
 Journal_Entry-Hive_Knight: hive
@@ -213,8 +216,8 @@ Journal_Entry-Uoma: greenpath
 Journal_Entry-Ooma: greenpath
 
 # Skills:
-vs: amound + amound_escape
-dash: Journal_Entry-Moss_Knight + Journal_Entry-Hornet
+vs: amound
+dash: (Journal_Entry-Moss_Knight || claw) + Journal_Entry-Hornet
 claw: Journal_Entry-Vengefly_King + (dash || vs)
 cdash: claw + (dash || vs)
 wings: claw + (cdash || (vs + dash)) + Journal_Entry-Shadow_Creeper + Journal_Entry-Broken_Vessel
@@ -228,9 +231,9 @@ woke_nail: Journal_Entry-Xero + Journal_Entry-Elder_Hu + Journal_Entry-Gorb + Jo
 
 # Area Access
 
-amound: Journal_Entry-False_Knight
-amound_escape: Journal_Entry-Elder_Baldur
-greenpath: vs || claw || Journal_Entry-Elder_Baldur
+amound: Journal_Entry-False_Knight || infection
+amound_escape: Journal_Entry-Elder_Baldur + vs
+greenpath: amound_escape || claw
 palace: woke_nail + basin + claw + wings
 cpeak: claw
 deepnest: claw
@@ -239,7 +242,7 @@ city: claw
 waterways: claw
 edge: claw
 basin: claw
-fungal: vs || dash
+fungal: amound_escape
 hive: claw + dash + tram_pass
 
 sanctum: Journal_Entry-Soul_Twister

@@ -81,6 +81,9 @@ export function getRandomOrder(
     let randomFullOrder: Array<string> = [];
     while (allIdentifiers.length > randomFullOrder.length) {
       let activeIdentifiers = getActiveIdentifierList(randomFullOrder, logics);
+      if (activeIdentifiers.length === 0) {
+        throw new Error("LogicError: the current list of active identifiers is empty")
+      }
       // Grouping factor logic: with the given chance, filters active identifiers
       // to nearby levers (unless the result is empty)
       if (biasedCoinFlip(groupingFactor / 10)) {
