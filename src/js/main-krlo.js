@@ -45,7 +45,7 @@ document.getElementById("generateButton").onclick = () => {
   const order = getRandomOrder(config, options);
   const textOrder = makeTextOrder(order, leversData);
   outputOrder(textOrder);
-  hksmLink.href = makeURLpath(textOrder, options);
+  hksmLink.href = makeURLpath(textOrder, options, { categoryName: "Kronk% RLO", splitName: "OnGhostCoinsIncremented" });
   hksmLink.classList.remove("d-none");
   // hksmLinkAlt.classList.add("d-none");
   hksmLinkAlt.remove();
