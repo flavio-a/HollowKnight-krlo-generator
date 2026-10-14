@@ -76,6 +76,7 @@ Journal_Entry-Brooding_Mawlek: -
 Journal_Entry-Tiktik: - 
 Journal_Entry-Husk_Hornhead: Journal_Entry-Aspid_Hunter
 Journal_Entry-Elder_Baldur: vs
+Journal_Entry-Shade: -
 
 # Garden
 Journal_Entry-Traitor_Lord: garden + shade_cloak + Journal_Entry-Mantis_Traitor
@@ -85,6 +86,24 @@ Journal_Entry-Marmu: garden + Journal_Entry-Mantis_Petra + Journal_Entry-Mantis_
 Journal_Entry-Mantis_Traitor: garden
 Journal_Entry-Mossfly: garden
 Journal_Entry-Spiny_Husk: garden
+
+# Pantheons
+p1: Journal_Entry-Vengefly_King + Journal_Entry-Gruz_Mother + Journal_Entry-False_Knight + Journal_Entry-Massive_Moss_Charger + Journal_Entry-Hornet + Journal_Entry-Gorb + Journal_Entry-Dung_Defender + Journal_Entry-Mawlurk + Journal_Entry-Soul_Warrior
+p2: Journal_Entry-Oro_and_Mato + Journal_Entry-Xero + Journal_Entry-Crystal_Guardian + Journal_Entry-Soul_Master + Journal_Entry-Oblobble + Journal_Entry-Mantis_Lords + Journal_Entry-Marmu + Journal_Entry-Nosk + Journal_Entry-Flukemarm + Journal_Entry-Broken_Vessel
+p3: Journal_Entry-Paintmaster_Sheo + Journal_Entry-Hive_Knight + Journal_Entry-Elder_Hu + Journal_Entry-The_Collector + Journal_Entry-God_Tamer + Journal_Entry-Grimm + Journal_Entry-Galien + Journal_Entry-Grey_Prince_Zote + Journal_Entry-Hopping_Zoteling + Journal_Entry-Winged_Zoteling + Journal_Entry-Volatile_Zoteling + Journal_Entry-Uumuu
+p4: Journal_Entry-GNS + Journal_Entry-No_Eyes + Journal_Entry-Traitor_Lord + Journal_Entry-Markoth + Journal_Entry-Watcher_Knight
+
+
+# Godhome
+Journal_Entry-Pure_Vessel: p4
+Journal_Entry-Oro_and_Mato: p1
+Journal_Entry-Paintmaster_Sheo: p2
+Journal_Entry-GNS: p3
+Journal_Entry-Nosket: Journal_Entry-SOB
+Journal_Entry-SOB: Journal_Entry-Pure_Vessel
+Journal_Entry-Void_Idol: Journal_Entry-AbsRad
+Journal_Entry-Weathered_Mask: Journal_Entry-AbsRad
+Journal_Entry-AbsRad: Journal_Entry-Nosket
 
 # Waterways
 Journal_Entry-Flukemon: waterways

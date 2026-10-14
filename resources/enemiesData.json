@@ -631,6 +631,45 @@
 		"text": "Vengefly King",
 		"group": "Greenpath"
 	},
+	"Journal_Entry-Shade": {
+		"text": "Shade"
+	},
+	"Journal_Entry-Pure_Vessel": {
+		"text": "Pure Vessel",
+		"group": "Godhome"
+	},
+	"Journal_Entry-Oro_and_Mato": {
+		"text": "Oro and Mato",
+		"group": "Godhome"
+	},
+	"Journal_Entry-Paintmaster_Sheo": {
+		"text": "Paintmaster Sheo",
+		"group": "Godhome"
+	},
+	"Journal_Entry-GNS": {
+		"text": "Great Nailsage Sly",
+		"group": "Godhome"
+	},
+	"Journal_Entry-Nosket": {
+		"text": "Winged Nosk",
+		"group": "Godhome"
+	},
+	"Journal_Entry-SOB": {
+		"text": "Sisters of Battle",
+		"group": "Godhome"
+	},
+	"Journal_Entry-Void_Idol": {
+		"text": "Void Idol",
+		"group": "Godhome"
+	},
+	"Journal_Entry-Weathered_Mask": {
+		"text": "Weathered Mask",
+		"group": "Godhome"
+	},
+	"Journal_Entry-AbsRad": {
+		"text": "Absolute Radiance",
+		"group": "Godhome"
+	},
 	"Journal_Entry-Elder_Baldur": {
 		"text": "Elder Baldur",
 		"group": "Crossroads"

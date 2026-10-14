@@ -16,7 +16,7 @@ Rule
   = lhs:Identifier ":" _ logic:Logic Whitespace* LineEnd? { return {lhs, logic}; }
 
 Identifier
-  =	[a-zA-Z_\-']+ { return text(); }
+  =	[a-zA-Z\-][a-zA-Z_\-'0-9]* { return text(); }
 
 Difficulty
   = "difficulty >= " value:Integer { return {kind: "min-difficulty", value: value }; }
