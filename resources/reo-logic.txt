@@ -40,7 +40,7 @@ Journal_Entry-Crystal_Crawler: cpeak + (claw || wings)
 Journal_Entry-Glimback: cpeak
 
 # Deepnest
-Journal_Entry-Dirtcarver: deepnest
+Journal_Entry-Dirtcarver: -
 Journal_Entry-Deephunter: claw
 Journal_Entry-Galien: claw + dnail
 Journal_Entry-Little_Weaver: deepnest
@@ -75,7 +75,7 @@ Journal_Entry-Vengefly: -
 Journal_Entry-Brooding_Mawlek: - 
 Journal_Entry-Tiktik: - 
 Journal_Entry-Husk_Hornhead: Journal_Entry-Aspid_Hunter
-Journal_Entry-Elder_Baldur: vs
+Journal_Entry-Elder_Baldur: vs + (Journal_Entry-Baldur || Journal_Entry-Shade)
 Journal_Entry-Shade: -
 
 # Garden
@@ -134,7 +134,7 @@ Journal_Entry-Sturdy_Fool: Journal_Entry-Sharp_Baldur
 Journal_Entry-Shielded_Fool: Journal_Entry-Belfly
 
 # No
-Journal_Entry-Lifeseed: -
+Journal_Entry-Lifeseed: vs || claw
 Journal_Entry-Lightseed: basin || infection
 Journal_Entry-Grimmkin_Nightmare: claw + wings + Journal_Entry-Grimm
 Journal_Entry-Hornet: Journal_Entry-Moss_Knight || claw
@@ -197,9 +197,9 @@ Journal_Entry-Violent_Husk: infection
 # Basin
 Journal_Entry-Lesser_Mawlek: basin
 Journal_Entry-Infected_Balloon: cdash
-Journal_Entry-Mawlurk: cdash
+Journal_Entry-Mawlurk: cdash + Journal_Entry-Shadow_Creeper
 Journal_Entry-Shadow_Creeper: basin
-Journal_Entry-Broken_Vessel: claw + cdash
+Journal_Entry-Broken_Vessel: claw + cdash + Journal_Entry-Shadow_Creeper
 Journal_Entry-Lost_Kin: Journal_Entry-Broken_Vessel + dnail
 
 # Sanctum
@@ -227,7 +227,7 @@ Journal_Entry-Heavy_Sentry: city
 Journal_Entry-Gorb: claw + dnail
 
 # Abyss
-Journal_Entry-Sibling: Journal_Entry-Hornet
+Journal_Entry-Sibling: Journal_Entry-Hornet + basin
 Journal_Entry-Void_Tendrils: Journal_Entry-Hornet + Journal_Entry-Sibling
 
 # FogCanyon
@@ -255,7 +255,7 @@ amound_escape: Journal_Entry-Elder_Baldur + vs
 greenpath: amound_escape || claw
 palace: woke_nail + basin + claw + wings
 cpeak: claw
-deepnest: claw
+deepnest: claw + Journal_Entry-Dirtcarver
 garden: claw || shade_cloak
 city: claw
 waterways: claw
