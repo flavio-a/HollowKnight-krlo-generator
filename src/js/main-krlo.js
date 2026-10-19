@@ -1,6 +1,6 @@
 import { getRandomOrder } from "./randomize";
 import { makeTextOrder, outputOrder } from "./make_output";
-import { makeURLpath } from "./make_splits";
+import { makeKronkHskmJSON, makeURLpath } from "./make_splits";
 import logic from "../../resources/krlo-logic.txt";
 import leversData from "../../resources/leversData.json";
 
@@ -39,13 +39,19 @@ const hksmLink = document.getElementById("hksmLink");
 const hksmLinkAlt = document.getElementById("hksmLinkAlt");
 
 document.getElementById("generateButton").onclick = () => {
-  console.log(`Difficulty: ${difficulty}\nDelay claw: ${delayClaw}\nGrouping factor: ${groupingFactor}`);
+  console.log(
+    `Difficulty: ${difficulty}\nDelay claw: ${delayClaw}\nGrouping factor: ${groupingFactor}`
+  );
   const config = { logicData: logic, itemsData: leversData };
   const options = { difficulty, groupingFactor, delayClaw };
   const order = getRandomOrder(config, options);
   const textOrder = makeTextOrder(order, leversData);
   outputOrder(textOrder);
-  hksmLink.href = makeURLpath(textOrder, options, { categoryName: "Kronk% RLO", splitName: "OnGhostCoinsIncremented" });
+  const hksmjson = makeKronkHskmJSON(textOrder, options, {
+    categoryName: "Kronk% RLO",
+    splitName: "OnGhostCoinsIncremented",
+  });
+  hksmLink.href = makeURLpath(hksmjson);
   hksmLink.classList.remove("d-none");
   // hksmLinkAlt.classList.add("d-none");
   hksmLinkAlt.remove();

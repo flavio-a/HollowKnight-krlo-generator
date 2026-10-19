@@ -1,6 +1,6 @@
 import { getRandomOrder } from "./randomize";
 import { makeTextOrder, outputOrder } from "./make_output";
-import { makeURLpath } from "./make_splits";
+import { makeBaseHksmJSON, makeURLpath } from "./make_splits";
 import logic from "../../resources/reo-logic.txt";
 import enemiesData from "../../resources/enemiesData.json";
 
@@ -10,12 +10,22 @@ let excludeGodhome = true;
 let excludeVoidIdol = true;
 let excludeWeatheredMask = true;
 
-document.getElementById("inputDifficulty").onchange = (e) => { difficulty = e.target.value };
+document.getElementById("inputDifficulty").onchange = (e) => {
+  difficulty = e.target.value;
+};
 
-document.getElementById("inputNoMenderbug").onchange = (e) => { excludeMenderbug = e.target.checked };
-document.getElementById("inputNoGodhome").onchange = (e) => { excludeGodhome = e.target.checked };
-document.getElementById("inputNoVoidIdol").onchange = (e) => { excludeVoidIdol = e.target.checked };
-document.getElementById("inputNoWeatheredMask").onchange = (e) => { excludeWeatheredMask = e.target.checked };
+document.getElementById("inputNoMenderbug").onchange = (e) => {
+  excludeMenderbug = e.target.checked;
+};
+document.getElementById("inputNoGodhome").onchange = (e) => {
+  excludeGodhome = e.target.checked;
+};
+document.getElementById("inputNoVoidIdol").onchange = (e) => {
+  excludeVoidIdol = e.target.checked;
+};
+document.getElementById("inputNoWeatheredMask").onchange = (e) => {
+  excludeWeatheredMask = e.target.checked;
+};
 
 const hksmLink = document.getElementById("hksmLink");
 const hksmLinkAlt = document.getElementById("hksmLinkAlt");
@@ -42,14 +52,20 @@ function getFilteredEnemiesData() {
 }
 
 document.getElementById("generateButton").onclick = () => {
-  console.log(`Difficulty: ${difficulty}\nExclude Menderbug: ${excludeMenderbug}`);
+  console.log(
+    `Difficulty: ${difficulty}\nExclude Menderbug: ${excludeMenderbug}`
+  );
   const filteredEnemiesData = getFilteredEnemiesData();
   const config = { logicData: logic, itemsData: filteredEnemiesData };
   const options = { difficulty, excludeMenderbug };
   const order = getRandomOrder(config, options);
   const textOrder = makeTextOrder(order, filteredEnemiesData);
   outputOrder(textOrder);
-  hksmLink.href = makeURLpath(textOrder, options, { categoryName: "Hunter's Mark REO", splitName: "ManualSplit" });
+  const hksmjson = makeBaseHksmJSON(textOrder, options, {
+    categoryName: "Hunter's Mark REO",
+    splitName: "ManualSplit",
+  });
+  hksmLink.href = makeURLpath(hksmjson);
   hksmLink.classList.remove("d-none");
   hksmLinkAlt.remove();
 };

@@ -17,28 +17,42 @@ type HKSMSplits = {
 type MakeSplitsOptions = {
   categoryName: string;
   splitName: string;
-}
+};
 
 const hksmurl = "https://hksplitmaker.com/?config=";
 
-function makeHKSMJSON(order: Array<string>, generatorOptions: Options, splitsOptions: MakeSplitsOptions): HKSMSplits {
-  const version = packagejson.version;
+export function makeBaseHksmJSON(
+  order: Array<string>,
+  generatorOptions: Options,
+  splitsOptions: MakeSplitsOptions
+): HKSMSplits {
   let hksmjson: HKSMSplits = structuredClone(hksmtemplate);
   // Category name
   hksmjson.categoryName = splitsOptions.categoryName;
   // Splits
   hksmjson.splitIds = Array(order.length).fill(splitsOptions.splitName);
-  hksmjson.splitIds[62] = "HuntersMark";
   // Split names
   hksmjson.names[splitsOptions.splitName] = order;
   // Variables
   hksmjson.variables["Krlo generator version"] = packagejson.version;
-  hksmjson.variables["Krlo generator options"] = JSON.stringify(generatorOptions);
+  hksmjson.variables["Krlo generator options"] =
+    JSON.stringify(generatorOptions);
   return hksmjson;
 }
 
-export function makeURLpath(order: Array<string>, options: Options, splitsOptions: MakeSplitsOptions): string {
-  const hksmjson = makeHKSMJSON(order, options, splitsOptions);
+export function makeKronkHskmJSON(
+  order: Array<string>,
+  generatorOptions: Options,
+  splitsOptions: MakeSplitsOptions
+): HKSMSplits {
+  let hksmjson = makeBaseHksmJSON(order, generatorOptions, splitsOptions);
+  // Set the last split to HuntersMark
+  hksmjson.splitIds[62] = "HuntersMark";
+  hksmjson.names["HuntersMark"] = "KRONK";
+  return hksmjson;
+}
+
+export function makeURLpath(hksmjson: HKSMSplits): string {
   const condensed = JSON.stringify(hksmjson);
   return hksmurl + btoa(condensed);
 }
