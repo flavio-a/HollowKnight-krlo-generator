@@ -9,7 +9,7 @@
 # Greenpath
 Journal_Entry-Moss_Knight: greenpath
 Journal_Entry-Mosskin: greenpath
-Journal_Entry-No_Eyes: greenpath + dnail
+Journal_Entry-No_Eyes: greenpath + dnail + Journal_Entry-Leaping_Husk
 Journal_Entry-Massive_Moss_Charger: greenpath
 Journal_Entry-Squit: greenpath
 Journal_Entry-Mosscreep: greenpath
@@ -25,9 +25,9 @@ Journal_Entry-Durandoo: greenpath
 Journal_Entry-Vengefly_King: greenpath + Journal_Entry-Moss_Knight
 
 # Palace
-Journal_Entry-Wingmould: palace
-Journal_Entry-Royal_Retainer: palace
-Journal_Entry-Seal_of_Binding: palace
+Journal_Entry-Wingmould: palace + Journal_Entry-Kingsmould
+Journal_Entry-Royal_Retainer: palace + Journal_Entry-Kingsmould
+Journal_Entry-Seal_of_Binding: palace + Journal_Entry-Kingsmould + Journal_Entry-Wingmould
 Journal_Entry-Kingsmould: palace
 
 # CPeak
@@ -40,8 +40,8 @@ Journal_Entry-Crystal_Crawler: cpeak + (claw || wings)
 Journal_Entry-Glimback: cpeak
 
 # Deepnest
-Journal_Entry-Dirtcarver: -
-Journal_Entry-Deephunter: claw
+Journal_Entry-Dirtcarver: claw
+Journal_Entry-Deephunter: deepnest
 Journal_Entry-Galien: claw + dnail
 Journal_Entry-Little_Weaver: deepnest
 Journal_Entry-Carver_Hatcher: deepnest
@@ -54,9 +54,9 @@ Journal_Entry-Deepling: deepnest
 Journal_Entry-Stalking_Devout: deepnest
 
 # Crossroads
-Journal_Entry-Husk_Guard: Journal_Entry-Aspid_Hunter
+Journal_Entry-Husk_Guard: Journal_Entry-Aspid_Hunter + Journal_Entry-Vengefly
 Journal_Entry-Aspid_Hunter: - 
-Journal_Entry-Aspid_Mother: Journal_Entry-Aspid_Hunter
+Journal_Entry-Aspid_Mother: Journal_Entry-Aspid_Hunter + Journal_Entry-Vengefly
 Journal_Entry-Menderbug: - 
 Journal_Entry-Maggot: Journal_Entry-False_Knight + claw + dnail
 Journal_Entry-Baldur: vs
@@ -66,15 +66,15 @@ Journal_Entry-Leaping_Husk: Journal_Entry-Aspid_Hunter
 Journal_Entry-Crawlid: - 
 Journal_Entry-Failed_Champion: Journal_Entry-False_Knight + dnail + claw
 Journal_Entry-False_Knight: Journal_Entry-Aspid_Hunter + Journal_Entry-Husk_Hornhead + Journal_Entry-Husk_Bully + Journal_Entry-Wandering_Husk + Journal_Entry-Vengefly
-Journal_Entry-Gruz_Mother: Journal_Entry-Aspid_Hunter
-Journal_Entry-Husk_Bully: Journal_Entry-Aspid_Hunter
+Journal_Entry-Gruz_Mother: Journal_Entry-Aspid_Hunter + Journal_Entry-Vengefly
+Journal_Entry-Husk_Bully: Journal_Entry-Aspid_Hunter + Journal_Entry-Vengefly
 Journal_Entry-Goam: Journal_Entry-Aspid_Hunter + dive
-Journal_Entry-Husk_Warrior: Journal_Entry-Aspid_Hunter
-Journal_Entry-Aspid_Hatchling: Journal_Entry-Aspid_Hunter
+Journal_Entry-Husk_Warrior: Journal_Entry-Aspid_Hunter + Journal_Entry-Vengefly
+Journal_Entry-Aspid_Hatchling: Journal_Entry-Aspid_Hunter + Journal_Entry-Vengefly
 Journal_Entry-Vengefly: - 
 Journal_Entry-Brooding_Mawlek: - 
 Journal_Entry-Tiktik: - 
-Journal_Entry-Husk_Hornhead: Journal_Entry-Aspid_Hunter
+Journal_Entry-Husk_Hornhead: Journal_Entry-Aspid_Hunter + Journal_Entry-Vengefly
 Journal_Entry-Elder_Baldur: vs + (Journal_Entry-Baldur || Journal_Entry-Shade)
 Journal_Entry-Shade: -
 
@@ -107,12 +107,12 @@ Journal_Entry-AbsRad: Journal_Entry-Nosket
 
 # Waterways
 Journal_Entry-Flukemon: waterways
-Journal_Entry-Dung_Defender: waterways
+Journal_Entry-Dung_Defender: waterways + Journal_Entry-Belfly
 Journal_Entry-Pilflip: waterways
 Journal_Entry-Hwurmp: waterways
 Journal_Entry-Flukemunga: waterways + dive + Journal_Entry-Belfly
 Journal_Entry-Flukefey: waterways
-Journal_Entry-White_Defender: waterways + Journal_Entry-Dung_Defender + lurien + monomon + herrah
+Journal_Entry-White_Defender: waterways + Journal_Entry-Dung_Defender + lurien + monomon + herrah + dive
 Journal_Entry-Flukemarm: waterways + dive + Journal_Entry-Flukefey
 
 # RestingGround
@@ -139,7 +139,7 @@ Journal_Entry-Lightseed: basin || infection
 Journal_Entry-Grimmkin_Nightmare: claw + wings + Journal_Entry-Grimm
 Journal_Entry-Hornet: Journal_Entry-Moss_Knight || claw
 Journal_Entry-Bluggsac: claw
-Journal_Entry-Radiance: Journal_Entry-Kingsmould + Journal_Entry-Traitor_Lord + Journal_Entry-Hollow_Knight
+Journal_Entry-Radiance: Journal_Entry-Kingsmould + Journal_Entry-Traitor_Lord + Journal_Entry-Hollow_Knight + Journal_Entry-Wingmould + Journal_Entry-Royal_Retainer
 Journal_Entry-Nightmare_King: Journal_Entry-Grimmkin_Nightmare
 Journal_Entry-Volatile_Gruzzer: infection || (Journal_Entry-Sharp_Baldur + Journal_Entry-Sturdy_Fool + Journal_Entry-Shielded_Fool + Journal_Entry-Vengefly + Journal_Entry-Primal_Aspid + Journal_Entry-Vengefly_King)
 Journal_Entry-Grimmkin_Master: Journal_Entry-Grimmkin_Novice
@@ -150,7 +150,7 @@ Journal_Entry-Grimm: Journal_Entry-Grimmkin_Master
 Journal_Entry-Grimmkin_Novice: claw + dnail
 
 # Edge
-Journal_Entry-Pale_Lurker: claw
+Journal_Entry-Pale_Lurker: claw + Journal_Entry-Belfly
 Journal_Entry-Markoth: shade_cloak
 Journal_Entry-Boofly: claw
 Journal_Entry-Great_Hopper: claw
